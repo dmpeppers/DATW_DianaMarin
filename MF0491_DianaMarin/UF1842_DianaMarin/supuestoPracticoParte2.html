@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPCION 2</title>
+</head>
+<body>
+    <h1>OPCION 2</h1>
+    <h2>PAR O IMPAR</h2>
+    <h3 id="salida"></h3>
+    <script>
+        let num = prompt("Escriba numero");
+        if(num % 2 === 0){
+            document.getElementById("salida").innerHTML = `El número ${num} es PAR`;
+            document.getElementById("salida").className = "par";
+        }
+        else{
+            document.getElementById("salida").innerHTML = `El número ${num} es IMPAR`;
+            document.getElementById("salida").className = "impar";
+        }
+    </script>
+    <h2>AÑO BISIESTO?</h2>
+    <h3 id="salida2"></h3>
+    <script>
+        let anyo = prompt("Escriba año");
+        if(((anyo % 4 === 0) && (anyo % 100 !== 0)) || (anyo % 400 === 0)){
+            document.getElementById("salida2").innerHTML = `El número ${anyo} SI es BISIESTO`;
+            document.getElementById("salida2").className = "par";
+        }
+        else{
+            document.getElementById("salida2").innerHTML = `El número ${anyo} NO es BISIESTO`;
+            document.getElementById("salida2").className = "impar";
+        }
+    </script>
+</body>
+</html>

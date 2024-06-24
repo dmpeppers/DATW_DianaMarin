@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pedido</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 90px;
+        }
+        [type = 'text']{
+            width: 200px;
+        }
+        [type = 'tel']{
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario pedido</h1>
+    </header>
+    <main>
+        <form action="envio.php" method="get" name="formularioPedido" id="formularioPedido">
+            <fieldset id="datosEnvio">
+                <legend>Datos Envio</legend>
+                <p>
+                    <label for="nombre-usuario">Nombre usuario</label>
+                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre usuario" autofocus>
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos usuario">
+                </p>
+                <p>
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Dirección sin código postal">
+                    <label for="cp"><abbr title="Codigo Postal">C.P.</abbr></label>
+                    <input type="tel" name="cp" id="cp" placeholder="Codigo Postal">
+                </p>
+                <p>
+                    <label for="localidad">Localidad</label>
+                    <input type="text" name="localidad" id="localidad" placeholder="Localidad">
+                </p>
+                <p>
+                    <label for="autonomiasEsp"><abbr title="Comunidades Autonomas de España">CCAA</abbr></label>
+                    <select name="autonomiasEsp" id="autonomiasEsp">
+                        <option value="" selected >Seleccione su CCA</option>
+                        <option value="andalucia">Andalucia</option>
+                        <option value="aragon">Aragón</option>
+                        <option value="principado-asturias">Principado de Asturias</option>
+                        <option value="illes-balears">Islas Baleares</option>
+                        <option value="canarias">Canarias</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castilla-leon">Castilla y León</option>
+                        <option value="castilla-la-mancha">Castilla - La Mancha</option>
+                        <option value="catalunya">Cataluña</option>
+                        <option value="valencia">Comunidad Valenciana</option>
+                        <option value="extremadura">Extremadura</option>
+                        <option value="galicia">Galicia</option>
+                        <option value="madrid">Comunidad de Madrid</option>
+                        <option value="murica">Region de murcia</option>
+                        <option value="navarra">Comunidad Foral de Navarra</option>
+                        <option value="pais-vasco">Pais Vasco</option>
+                        <option value="rioja">La Rioja</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Pedido</legend>
+                <p>
+                    <label for="neumaticos">Neumáticos:</label>
+                    <input type="number" name="neumaticos" id="neumaticos" placeholder="0">
+                </p>
+                <p>
+                    <label for="noLatasAceite">Nº Latas aceite:</label>
+                    <input type="number" name="noLatasAceite" id="noLatasAceite" placeholder="0">
+                </p>
+                <p>
+                    <label for="noBujias">Número de Bujias:</label>
+                    <input type="number" name="noBujias" id="noBujias" placeholder="0">
+                </p>
+                <p>
+                    <label for="estadoSitio">Cómo encontró el sitio:</label>
+                    <select name="estadoSitio" id="estadoSitio">
+                        <option value="" selected>Seleccione una opción</option>
+                        <option value="casado">Bien</option>
+                        <option value="soltero">Mal</option>
+                        <option value="viudo">ok</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Indicadores</legend>
+                <textarea name="comentario" id="comentario" cols="50" rows="10" maxlength="200"></textarea>
+                <p>¿Desea recibir nuestra revista? </p>
+                <p>
+                    <label for="si">Si: </label>
+                    <input type="radio" name="si" id="si">
+                    <label for="no">No:</label>
+                    <input type="radio" name="no" id="no">
+                    </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar pedido">
+                <input type="reset" value="Borrar Formulario">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
