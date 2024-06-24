@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAR O IMPAR</title>
+    <style>
+        body {
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 3px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h3 {
+            font-size: 5em;
+            text-align: center;
+        }
+        .impar {
+            color: red;
+        }
+        .par {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAR/IMPAR</h1>
+    <h3 id="salida"></h3>
+    <script>
+        let num = prompt("Escriba numero");
+        if(num % 2 === 0){
+            document.getElementById("salida").innerHTML = `El número ${num} es PAR`;
+            document.getElementById("salida").className = "par";
+        }
+        else{
+            document.getElementById("salida").innerHTML = `El número ${num} es IMPAR`;
+            document.getElementById("salida").className = "impar";
+        }
+    </script>
+</body>
+</html>

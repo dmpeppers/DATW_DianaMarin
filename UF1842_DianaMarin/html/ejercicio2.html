@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivos Meses</title>
+    <style>
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>FESTIVOS EN ASTURIAS</h1>
+    <h2 id="mesbox"></h2>
+    <script>
+        let mes = prompt("Escriba nombre del mes").toLocaleLowerCase();
+        switch(mes){
+            case 'enero':
+                document.getElementById("mesbox").innerHTML ="ENERO: <br> El dia: 2 <br> Festivo: Año nuevo <br> El dia: 6 <br> Festivo: Reyes";
+                break;
+            case 'febrero':
+                document.getElementById("mesbox").innerHTML = "FEBRERO: <br> no hay fiesta";
+                break;
+            case 'marzo':
+                document.getElementById("mesbox").innerHTML = "MARZO: <br> no hay fiesta";
+                break;
+            case 'abril':
+                document.getElementById("mesbox").innerHTML = "ABRIL:<br> El dia: 6 <br> Festivo: Jueves Santo <br> El dia: 7 <br> Festivo: Viernes Santo";
+                break;
+            case 'mayo':
+                document.getElementById("mesbox").innerHTML = "MAYO:<br> El dia: 1 <br> Festivo: Dia del Trabajo";
+                break;
+            case 'junio':
+                document.getElementById("mesbox").innerHTML = "JUNIO:<br> no hay fiesta";
+                break;
+            case 'julio':
+                document.getElementById("mesbox").innerHTML = "JULIO: <br>no hay fiesta";
+                break;
+            case 'agosto':
+                document.getElementById("mesbox").innerHTML = "AGOSTO:<br> El dia: 15 <br> Festivo: Asuncion de la Virgen";
+                break;
+            case 'septiembre':
+                document.getElementById("mesbox").innerHTML = "SEPTIEMBRE:<br> El dia: 8 <br> Festivo: Dia de Asturias";
+                break;
+            case 'octubre':
+                document.getElementById("mesbox").innerHTML = "OCTUBRE:<br> El dia: 12 <br> Festivo: Fiesta Nacional";
+                break;
+            case 'noviembre':
+                document.getElementById("mesbox").innerHTML = "NOVIEMBRE:<br> El dia: 1 <br> Festivo: Fiesta de Todos los Santos";
+                break;
+            case 'diciembre':
+                document.getElementById("mesbox").innerHTML = "DICIEMBRE:<br> El dia: 6 <br> Festivo: Dia de la Constitucion <br> El dia: 8 <br> Festivo: Inmaculada Concepcion <br> El dia: 25 <br> Festivo: Navidad";
+                break;
+            default:
+                document.getElementById("mesbox").innerHTML = ("Mes NO valido	(ᕗ ͠° ਊ ͠° )ᕗ  ");
+        }
+    </script>
+</body>
+</html>

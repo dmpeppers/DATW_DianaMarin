@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion</title>
+    <style>
+        p {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funciones invocadas</h1>
+    <p id="salida1"></p>
+    <p id="salida2"></p>
+    <p id="salida3"></p>
+    <p id="salida4"></p>
+    <script>
+        function insertarInformacion(){
+            let curso = `Desarrollo de aplicaciones con tecnologias web.`;
+            let anyo = 2023;
+            let alumnos = 15;
+            let imparte = `Mentiona`;
+            document.getElementById("salida1").innerHTML = `<strong>Curso:</strong> ${curso}`;
+            document.getElementById("salida2").innerHTML = `<strong>Año:</strong> ${anyo}`;
+            document.getElementById("salida3").innerHTML = `<strong>Alumnos:</strong> ${alumnos}`;
+            document.getElementById("salida4").innerHTML = `<strong>Imparte:</strong> ${imparte}`;
+        }
+    </script>
+    <script>
+        insertarInformacion();
+    </script>
+</body>
+</html>

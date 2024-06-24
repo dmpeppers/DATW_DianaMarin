@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion Objeto</title>
+</head>
+<body>
+    <h1>Creacion de Objetos</h1>
+    <script>
+        function separador(){
+            document.write("<p>---------------------------------</p>")
+        }
+        function coche(marca, modelo, color, marcaNeumaticos,numeroRuedas){
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.marcaNeumaticos = marcaNeumaticos;
+            this.numeroRuedas = numeroRuedas;
+
+            this.mostrarFichaCoche = function(){
+                document.write(`<p>Marca: ${marca}</p>`);
+                document.write(`<p>Modelo: ${modelo}</p>`);
+                document.write(`<p>Color: ${color}</p>`);
+                document.write(`<p>Marca de Neumaticos: ${marcaNeumaticos}</p>`);
+                document.write(`<p>Numero de Ruedas: ${numeroRuedas}</p>`);
+            };
+
+            this.arrancar = function(){
+                document.write("<p>Vehiculo arrancando <img src = '../img/loading.gif' width=50px></p>");
+            };
+            this.acelerar = function(){
+                document.write("<p>Vehiculo acelerando <img src = '../img/loading.gif' width=50px></p>")
+            };
+            this.frenar = function(){
+                document.write("<p>Vehiculo frenando <img src = '../img/loading.gif' width=50px></p>")
+            };
+        };
+
+        let carro1 = new coche("Volvo","Serie 1", "Gris claro", "Yokohama", "4");
+        let carro2 = new coche("Jeep", "Wrangler", "Cobre", "Good Year", 5);
+        let carro3 = new coche("Ford", "Challenger", "Azul", "Continental", 4);
+
+        separador();
+        document.write(`<strong>Coche 1</strong>`);
+        carro1.mostrarFichaCoche();
+        carro1.arrancar();
+        separador();
+        document.write(`<strong>Coche 2</strong>`);
+        carro2.mostrarFichaCoche();
+        carro2.acelerar();
+        separador();
+        document.write(`<strong>Coche 3</strong>`);
+        carro3.mostrarFichaCoche();
+        carro3.frenar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Array</title>
+    <style>
+        body{
+            border: 3px solid black;
+            border-radius: 20px;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Promedio desde un Array de números</h1>
+    <h2>El Array:</h2>
+    <p id="lista"></p>
+    <h2>El resultado:</h2>
+    <p id="resultado"></p>
+    <script>
+        const listadoNumeros = [12, 24, 11, 34, 101];
+        let suma=0;
+        for (let i=0; i<listadoNumeros.length; i++){
+            suma += listadoNumeros[i];
+        }
+        let promedio = suma /listadoNumeros.length;
+
+        document.getElementById("lista").innerHTML = `La lista de Numeros:  ${listadoNumeros}`;
+        document.getElementById("resultado").innerHTML = `El promedio es: ${promedio}`;
+    </script>
+</body>
+</html>
