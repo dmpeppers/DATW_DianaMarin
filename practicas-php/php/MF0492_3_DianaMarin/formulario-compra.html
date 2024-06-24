@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmeticos Kiehl's</title>
+    <style>
+        #contenedor {
+            width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+            border: 3px solid rgb(200, 200, 200);
+            padding: 30px;
+        }
+        fieldset {
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 3px solid rgb(200, 200, 200);
+        }
+        legend {
+            width: 100px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: rgb(200, 200, 200);
+            border-radius: 10px;
+        }
+        label{
+            width: 300px;
+            margin-right: 200px;
+        }
+        #productos-envio {
+            display: inline-block;
+            width: 480px;
+        }
+        input {
+            width: 200px;
+            padding: 5px;
+            border: 3px solid rgb(200, 200, 200);
+        }
+        input#telefono{
+            width: 200px;
+        }
+        input#direccion {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Cosméticos Kiehl's</h1>
+        <h2>Tienda</h2>
+        <form action="pedido-kiehls.php" method="post" name="pedido-kiehls">
+            <fieldset id="productos-envio" class="centrar">
+                <legend>Productos</legend>
+                <p>
+                    <label for="facialFuel">Facial Fuel (32,00€):  </label>
+                    <input type="number" id="facialFuel" name="facialFuel" autocomplete="off" value="0" step="1" min="0">
+                </p>
+                <p>
+                    <label for="energizingFaceWash">Energizing Face Wash(25,00€):  </label>
+                    <input type="number" id="energizingFaceWash" name="energizingFaceWash" autocomplete="off" value="0" min="0">
+                </p>
+                <p>
+                    <label for="energizingTonicMen">Energizing Tonic for Men(18,00€):  </label>
+                    <input type="number" id="energizingTonicMen" name="energizingTonicMen" autocomplete="off" value="0" min="0">
+                </p>
+                <p>
+                    <label for="ultimateManBodyScrub">Ultimate Man Body Scrub Soap (16,00€):  </label>
+                    <input type="number" id="ultimateManBodyScrub" name="ultimateManBodyScrub" autocomplete="off" value="0" min="0">
+                </p>
+                <p>
+                    <label for="telefono">Telefono de contacto   </label>
+                    <input type="tel" name="telefono" id="telefono" >
+                </p>
+                <p>
+                    <label for="direccion">Dirección  </label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+                </p>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </form>
+    </div>
+</body>
+</html>

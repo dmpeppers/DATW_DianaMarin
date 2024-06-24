@@ -1,0 +1,308 @@
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		2	64 
+
+        E. Face Wash		3	75 
+
+        E. Tonic for men	4	72 
+
+        Ultimate Man Body Scrub	1	 16
+
+        Numero total de productos:-------10 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 227 
+
+        IVA del 21%: 	 47.67 
+
+        Total con IVA: 	 274.67
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 
+
+        E. Face Wash		2	50 
+
+        E. Tonic for men	3	54 
+
+        U.Man Body Scrub	4	 64
+
+        Numero total de productos:-------10 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 200 
+
+        IVA del 21%: 	 42 
+
+        Total con IVA: 	 242
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 
+
+        E. Face Wash		8	200 
+
+        E. Tonic for men	16	288 
+
+        U.Man Body Scrub	5	 80
+
+        Numero total de productos:-------30 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 600 €
+
+        IVA del 21%: 	 126 €
+
+        Total con IVA: 	 726 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		5	160 €
+
+        E. Face Wash		80	2000 €
+
+        E. Tonic for men	21	378 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------107 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 2554 €
+
+        IVA del 21%: 	 536.34 €
+
+        Total con IVA: 	 3090.34 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 845219846
+
+        Direccion envio: Algun lugar en La Mancha
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 6257894
+
+        Direccion envio: Calle cean Bermudez 11, 33208
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 65465132
+
+        Direccion envio: calle de afuera
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 65465132
+
+        Direccion envio: calle de afuera
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €
+
+ Fecha: 04/06/2024 
+
+        Telefono de contacto: 65465132
+
+        Direccion envio: calle de afuera
+
+        Pedido: ---------------------------- 
+
+        Producto 	 Cantidad 	Total
+
+        Facial Fuel		1	32 €
+
+        E. Face Wash		1	25 €
+
+        E. Tonic for men	1	18 €
+
+        U.Man Body Scrub	1	 16 €
+
+        Numero total de productos:-------4 
+
+        Total: ----------------------------- 
+
+        Total sin IVA: 	 91 €
+
+        IVA del 21%: 	 19.11 €
+
+        Total con IVA: 	 110.11 €

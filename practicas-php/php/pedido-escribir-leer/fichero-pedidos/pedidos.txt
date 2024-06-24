@@ -1,0 +1,14 @@
+24/05/2024 	 neumatico  	 aceite  	 bujias  	 Direccion aa 
+24,05,2024 	 neumatico  	 aceite  	 bujias  	 Direccion aa 
+24,05,2024 	 neumatico  	 aceite  	 bujias  	 Direccion aa 
+24/05/2024 	 neumatico 1 	 aceite 1 	 bujias 0 	 Direccion aa 
+27/05/2024 	 neumatico 1 	 aceite 1 	 bujias 1 	 Direccion qw 
+28/05/2024 	 neumatico 1 	 aceite 1 	 bujias 1 	 Direccion calle 
+04/06/2024 	 neumatico  	 aceite  	 bujias  	 Direccion  
+04/06/2024 	 neumatico 1 	 aceite 1 	 bujias 1 	 Direccion qw 
+04/06/2024 	 neumatico  	 aceite  	 bujias  	 Direccion  
+04/06/2024 	 neumatico  	 aceite  	 bujias  	 Direccion  
+04/06/2024 	 neumatico 1 	 aceite 1 	 bujias 1 	 Direccion calle 
+04/06/2024 	 neumatico  	 aceite  	 bujias  	 Direccion  
+04/06/2024 	 neumatico 1 	 aceite 1 	 bujias 1 	 Direccion SD 
+04/06/2024 	 neumatico  	 aceite  	 bujias  	 Direccion  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<body>
+    <h1>Pedido</h1>
+    <form action="capturar-pedido-escribir.php" method="get">
+        <fieldset>
+            <legend>Pedido</legend>
+            <p>
+                <label for="neumaticos">Neumaticos:</label>
+                <input type="number" id="neumaticos" name="neumaticos" value="0">
+            </p>
+            <p>
+                <label for="latas-aceite">Latas de Aceite:</label>
+                <input type="number" id="latas-aceite" name="latas-aceite" value="0">
+            </p>
+            <p>
+                <label for="bujias">Bujias:</label>
+                <input type="number" name="bujias" id="bujias" value="0">
+            </p>
+            <p>
+                <label for="envio">Direccion de envio:</label>
+                <input type="text" name="envio" id="envio">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restableces">
+        </p>
+    </form>
+</body>
+</html>

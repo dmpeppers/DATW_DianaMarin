@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="procesar-form-ficha.php" method="post" name="formulario" id="formulario">
+        <fieldset>
+        <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre"  name="nombre" maxlength="50" autofocus required>
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos"  name="apellidos" required>
+            </p>
+            <p>
+                <label for="direccion">Direccion:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </p>
+            <p>
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad"required>
+            </p>
+            <p>
+                <label for="autonomiasEsp"><abbr title="Comunidades Autonomas de España">CCAA</abbr></label>
+                <select name="autonomiasEsp" id="autonomiasEsp" required>
+                    <!-- <option value="" selected hidden>Seleccione su comunidad</option> -->
+                    <option value="andalucia">Andalucia</option>
+                    <option value="aragon">Aragón</option>
+                    <option value="principado-asturias">Principado de Asturias</option>
+                    <option value="illes-balears">Islas Baleares</option>
+                    <option value="canarias">Canarias</option>
+                    <option value="cantabria">Cantabria</option>
+                    <option value="castilla-leon">Castilla y León</option>
+                    <option value="castilla-la-mancha">Castilla - La Mancha</option>
+                    <option value="catalunya">Cataluña</option>
+                    <option value="valencia">Comunidad Valenciana</option>
+                    <option value="extremadura">Extremadura</option>
+                    <option value="galicia">Galicia</option>
+                    <option value="madrid">Comunidad de Madrid</option>
+                    <option value="murica">Region de murcia</option>
+                    <option value="navarra">Comunidad Foral de Navarra</option>
+                    <option value="pais-vasco">Pais Vasco</option>
+                    <option value="rioja">La Rioja</option>
+                    <option value="" selected hidden>Seleccione su comunidad</option>
+                </select>
+            </p>
+            <p>
+                <label for="fechaNacimiento">Fecha nacimiento: </label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Pedido</legend>
+            <p>
+                <label for="impresora">Impresora HP:</label>
+                <input type="number" min="0" value="0" id="impresora" name="impresora">
+            </p>
+            <p>
+                <label for="movil">Movil:</label>
+                <input type="number" min="0" value="0"  id="edad"  name="movil">
+            </p>
+            <p>
+                <label for="tableta">Tableta:</label>
+                <input type="number" min="0" value="0"  id="tableta" name="tableta">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </p>
+    </form>
+</body>
+</html>

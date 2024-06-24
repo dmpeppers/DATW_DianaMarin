@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario login</title>
+    <style>
+        fieldset{
+            background-color: azure;
+            border: 3px solid rgb(215, 226, 226);
+            border-radius: 10px;
+            width: 400px;
+            font-weight: bold;
+        }
+        fieldset{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario Login</h1>
+    <form action="validar-form-login.php" method="post">
+        <fieldset>
+        <legend>Identificacion</legend>
+        <p>
+            <label for="usuario">Usuario: </label>
+            <input type="text" id="usuario" name="usuario" placeholder="Escribir usuario" autofocus required>
+        </p>
+        <p>
+            <label for="pass">Contraseña: </label>
+            <input type="password" id="pass" name="pass" required>
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restableces">
+    </p>
+    </form>
+</body>
+</html>

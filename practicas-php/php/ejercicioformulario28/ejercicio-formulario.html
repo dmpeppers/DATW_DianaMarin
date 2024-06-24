@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario examen</title>
+    <style>
+        #contenedor {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 4px solid rgb(200, 200, 200);
+        }
+
+        legend {
+            width: 100px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: rgb(200, 200, 200);
+            border-radius: 10px;
+        }
+
+        #datos-envio label, #pedido label {
+            display: inline-block;
+            width: 120px;
+            /* background-color: bisque; */
+        }
+        /* label{
+            display: inline-block;
+            width: 320px;
+            background: bisque;
+        } */
+
+        [for=encuesta] {
+            display: block;
+            width: 200px;
+            /* background-color: yellow; */
+        }
+
+        input,
+        select {
+            width: 300px;
+            padding: 5px;
+            border: 4px solid rgb(200, 200, 200);
+        }
+
+        input#direccion {
+            width: 400px;
+        }
+
+        .centrar {
+            display: block;
+            width: 70px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            /* background-color: red; */
+        }
+
+        .alinear-derecha {
+            text-align: right;
+        }
+        .ocultar{
+            display: none;
+        }
+        .texto-gris-claro{
+            color: rgb(200, 200, 200);
+        }
+        .ancho{
+            width: 20px;
+            /* background-color: red; */
+        }
+        #comentario label{
+            /* background-color:yellow; */
+            width: 20px;
+            display: inline-block;
+        }
+        .ocultar-vista{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Formulario pedido</h1>
+        <form action="procesar-pedido2.php" method="post" name="pedido">
+            <fieldset id="datos-envio">
+                <legend>Datos envío</legend>
+                <p>
+                    <label for="nombre_usuario">Nombre usuario</label>
+                    <input type="text" placeholder="Nombre usuario" id="nombre_usuario" name="nombre_usuario" autofocus>
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos usuario">
+                </p>
+                <p>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección sin código postal">
+                    <label for="cp" class="alinear-derecha">C.P.</label>
+                    <input type="text" id="cp" name="cp" placeholder="Código Postal">
+                </p>
+                <p>
+                    <label for="localidad">Localidad</label>
+                    <input type="text" id="localidad" name="localidad" placeholder="Localidad">
+                </p>
+                <p>
+                    <label for="ccaa">Comunidad autónoma</label>
+                    <select name="ccaa" id="ccaa">
+                        <option value="Galicia">Galicia</option>
+                        <option value="Asturias">Principado de Asturias</option>
+                        <option value="Cantabria">Cantabria</option>
+                        <option value="País Vasco">País Vasco</option>
+                        <option value="Navarra">Navarra</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Castilla-León">Castilla-León</option>
+                        <option value="Aragón">Aragón</option>
+                        <option value="Cataluña">Cataluña</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                        <option value="Extremadura">Extremadura</option>
+                        <option value="Valencia">Comunidad Valenciana</option>
+                        <option value="Andalucía">Andalucía</option>
+                        <option value="Murcia">Murcia</option>
+                        <option value="Baleares">Islas Baleares</option>
+                        <option value="Canarias">Islas Canarias</option>
+                        <option value="Ceuta y Melilla">Ceuta y Melilla</option>
+                        <option value="" disabled selected class="ocultar texto-gris-claro">Seleccione su CCAA</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset id="pedido">
+                <legend><span class="centrar">Pedido</span></legend>
+                <p>
+                    <label for="neumaticos">Neumáticos:</label>
+                    <input type="number" id="neumaticos" name="neumaticos" autocomplete="off" value="0" step="1" min="0">
+                </p>
+                <p>
+                    <label for="aceite">Nº latas aceite:</label>
+                    <input type="number" id="aceite" name="aceite" autocomplete="off" value="0" min="0">
+                </p>
+                <p>
+                    <label for="bujias">Número de bujías:</label>
+                    <input type="number" id="bujias" name="bujias" autocomplete="off" value="0" min="0">
+                </p>
+                <p>
+                    <label for="encuesta">Cómo encontró el sitio:</label>
+                    <select name="encuesta" id="encuesta">
+                        <option value="a">Soy un cliente habitual</option>
+                        <option value="b">Publicidad en TV</option>
+                        <option value="c">Directorio telefónico</option>
+                        <option value="d">De boca en boca</option>
+                        <option value="" selected class="ocultar-vista">Seleccione una opción</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset id="comentario">
+                <legend>Indicaciones</legend>
+                <textarea name="comentario" id="comentario"
+                          cols="67" rows="8" 
+                          placeholder="Si desea hacer alguna indicación escríbala aquí"></textarea>
+                
+                <p>¿Desea recibir nuestra revista?</p>
+
+                <label for="si">Sí</label>
+                <input type="radio" id="si"
+                       name="revista" checked
+                       class="ancho" value="sí">
+                
+                <label for="no">No</label>
+                <input type="radio" id="no" 
+                       name="revista"
+                       class="ancho" value="no">
+            </fieldset>
+            <input type="submit" value="Enviar pedido">
+            <input type="reset" value="Borrar formulario">
+        </form>
+    </div>
+</body>
+
+</html>
