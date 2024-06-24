@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion calcular Fecha</title>
+</head>
+<body>
+    <!-- REVISAR EN EL LIBRO FECHAS (Objeto DATE)-->
+    <h1>OBJETO FECHAS</h1>
+    <h2 id="salida"></h2>
+    <h2 id="diasemana"></h2>
+    <h2 id="mes"></h2>
+    <h2 id="anyo"></h2>
+    <script>
+        // El numero del dia 
+        let diaActualNum = new Date().getDate();
+        document.getElementById("salida").innerHTML = `Estamos a ${diaActualNum}`;
+
+        // el Nombre del dia
+        /* Solamente sale el numero del dia en la semana, es decir, 0 es domingo, 1 es lunes asi, por eso
+        debemos añadir un Array para poder segun el numero que nos trae poder desplegar 
+        el nombre del dia */
+        let diaActual = new Date().getDay();
+        let dia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        document.getElementById("diasemana").innerHTML = `Dia de la semana ${dia[diaActual]}`;
+
+        // mes
+       /*  // tenemos misma situacion con los dias, nos entrega un numero que inicia en 0 para enero, por eso debemos hacer un array para que nos diga el nombre del mes */
+        let mes = new Date().getMonth();
+        let nombreMes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        document.getElementById("mes").innerHTML = `El mes es ${nombreMes[mes]}`;
+
+        // año
+        let anyo = new Date().getFullYear();
+        document.getElementById("anyo").innerHTML = `El año es ${anyo}`;
+    </script>
+</body>
+</html>

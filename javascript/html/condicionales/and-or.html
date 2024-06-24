@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AND&& Y OR||</title>
+</head>
+<body>
+    <h1>AND && Y OR ||</h1>
+    <h2 id="info"></h2>
+    <script>
+        // var nacionalidad, idioma;
+        // nacionalidad = prompt("Escriba su pais","España").toLowerCase();
+        // idioma = prompt("Escribir el idioma").toLowerCase();
+        // if (nacionalidad == "españa" && idioma == "español"){
+        //     document.getElementById("info").innerHTML = `Es de España y habla español`;
+        // } else {
+        //     document.write("No habla español o no es español");
+        // }
+        // if (nacionalidad == "españa" || idioma == "español"){
+        //     document.getElementById("info").innerHTML = `Es de España y habla español`;
+        // } else {
+        //     document.write("No habla español o no es español");
+        // }
+            let mes = prompt("Escribe un mes").toUpperCase();
+            if(mes == 'ENERO'||mes == 'MARZO'||mes == 'MAYO'||mes == 'JULIO'||mes == 'AGOSTO'||mes == 'OCTUBRE'||mes == 'DICIEMBRE'){
+                document.getElementById("info").innerHTML = mes + `: Este mes tiene 31 dias`;
+            }
+            else if (mes == 'ABRIL'||mes == 'JUNIO'||mes == 'SEPTIEMBRE'||mes == 'NOVIEMBRE'){
+                document.getElementById("info").innerHTML = mes + `: Este mes tiene 30 dias`;
+            }
+            else if(mes == 'FEBRERO'){
+                document.getElementById("info").innerHTML = mes + `: Este mes tiene 28 y 29 dias`;
+            }
+            else{
+                document.write("mes no valido");
+            }
+
+    </script>
+</body>
+</html>

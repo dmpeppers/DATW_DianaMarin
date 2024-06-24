@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises y paisajes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            height: 96vh;
+        }
+        .dancing-script-700 {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            text-shadow: 3px 3px 3px black;
+        }
+        h2 {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-size: 5em;
+            margin: 0;
+            padding:0;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="dancing-script-700">Paises por promt</h1>
+    <h2 class="dancing-script-700" id="titulo"></h2>
+    <img src="" alt="" id="salida">
+    <script>
+        let pais = prompt("Escribe uno de los paises : (Alemania, China, Escocia o Japon)").toLocaleLowerCase();
+        if (pais == "alemania"){
+            document.getElementById("titulo").innerHTML = "Alemania";
+            document.getElementById("salida").src ="../img/paisajes/alemania_100.jpg";
+        }
+        else if (pais == "china"){
+            document.getElementById("titulo").innerHTML = "China";
+            document.getElementById("salida").src = "../img/paisajes/Red_lanterns_Chengdu_Sichuan_China.jpg";
+        }
+        else if (pais == "escocia"){
+            document.getElementById("titulo").innerHTML = "Escocia";
+            document.getElementById("salida").src = "../img/paisajes/Abadia_de_Sweetheart_Escocia.jpg";
+        }
+        else if(pais == "japon"){
+            document.getElementById("titulo").innerHTML = "Japon";
+            document.getElementById("salida").src = "../img/paisajes/monte_fuji_japon_ocaso.jpg"
+        }
+        else{
+            document.write("Pais no valido");
+        }
+    </script>
+</body>
+</html>

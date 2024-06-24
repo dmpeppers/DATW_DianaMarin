@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-WHILE</title>
+</head>
+<body>
+    <script>
+        let user, pass;
+        do {
+            user = prompt("Escribe el usuario: ", "curso").toLowerCase();
+            pass = prompt("Escriba su contraseña: ");
+        }
+        while(user != "curso" || pass !="123456");
+        document.write("<p> El usuario es :" +user);
+        document.write("<p> El usuario es :" +pass);
+            
+        if(user == "curso" && pass =="123456"){
+            let mensaje = "Si el usuario es curso y la contraseña es 123456 el nombre del usuario es Rodolfo";
+        }
+        document.write(mensaje);
+    </script>
+</body>
+</html>

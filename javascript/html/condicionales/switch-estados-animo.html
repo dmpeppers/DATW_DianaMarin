@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados de animo con Switch</title>
+    <style>
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estados de Animo con Switch</h1>
+    <h2 id="estadoanimo"></h2>
+    <SCript>
+        let animo = prompt("Ingresa tu estado de animo :)  :(   :|  ;)  :/")
+        switch(animo){
+            case ":)":
+                document.getElementById("estadoanimo").innerHTML = "Alegre ( ˘ ³˘)ノ°ﾟº❍｡";
+                break;
+            case ":(":
+                document.getElementById("estadoanimo").innerHTML = ("Triste ( ╥﹏╥) ノシ");
+                break;
+            case ":|":
+                document.getElementById("estadoanimo").innerHTML = ("Ni fu ni fa (˵ ͡° ͜ʖ ͡°˵) ");
+                break;
+            case ";)":
+                document.getElementById("estadoanimo").innerHTML = ("Chispeante (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ ");
+                break;
+            case ":/":
+                document.getElementById("estadoanimo").innerHTML = ("Frustrado ʕノ•ᴥ•ʔノ ︵ ┻━┻");
+                break;
+            default:
+                document.getElementById("estadoanimo").innerHTML = ("Estado NO valido	(ᕗ ͠° ਊ ͠° )ᕗ  ");
+        }
+    </SCript>
+</body>
+</html>

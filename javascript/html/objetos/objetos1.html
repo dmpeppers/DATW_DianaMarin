@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        // METODO 1. CREACION DE OBJETOS
+/*         // con este metodo no se pueden crear nuevas instancias
+ se coloca el nombre de la propiedad y luego dos puntos
+ marca : "",
+ separando las diferentes propiedades se usa , */
+        let cocheRamon = {
+            marca: "Nissan", 
+            modelo: "Micra",
+            anyo: 2012,
+            color: "azul",
+            puertas: 3,
+            arrancar: function(){
+                document.write("¡Brooummm!");
+            },
+            detener: function(){
+                document.write("¡Soooo!");
+            }
+        };
+        let cocheFran = {
+            marca: "Citroën", 
+            modelo: "C4",
+            anyo: 2006,
+            color: "gris claro",
+            puertas: 5,
+            arrancar: function(){
+                document.write("¡Brooummmmmmmmmmmmmmmmm!");
+            },
+            detener: function(){
+                document.write("¡Sooooooooooooooooo!");
+            }
+        };
+        let carroDiana = {
+            marca: "Jeep",
+            modelo: "Wangler",
+            anyo: 2020,
+            color: "cobre",
+            puertas: 5,
+            arrancar:function(){
+                document.write("¡Wroommmmm!");
+            },
+            detener: function(){
+                document.write("¡Stoooop!");
+            }
+        }
+        document.write(cocheRamon.marca);
+        document.write("<br>");
+        cocheRamon.arrancar();
+        document.write("<br>");
+        document.write(cocheFran.marca);
+        document.write("<br>");
+        cocheFran.arrancar();
+        document.write("<br>");
+        document.write(carroDiana.marca);
+        document.write("<br>");
+        carroDiana.arrancar();
+    </script>
+</body>
+</html> 

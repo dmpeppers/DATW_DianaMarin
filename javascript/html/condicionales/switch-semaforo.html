@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch semaforo</title>
+</head>
+<body>
+    <h1>Switch semaforo</h1>
+    <script>
+         let color = prompt("Escribe un color");
+         switch(color){
+            case 'rojo': 
+                document.write("<p>STOP</P>");
+                break;
+            case 'verde':
+                document.write("<p>GO</P>");
+                break;
+            case 'amarillo':
+                document.write("<p>WAIT</P>");
+                break;
+            default:
+                document.write("<p>COLOR NO VALIDO</P>");
+         }
+         document.write("<p>Codigo continua aqui</p>")
+    </script>
+
+</body>
+</html>

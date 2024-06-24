@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-WHILE EJ 2</title>
+</head>
+<body>
+    <script>
+        // SI QUEREMOS CONTAR DESDE 1 DEBEMOS DEJAR LA SUMA ANTES DE IMPRIMIR EL CONTADOR
+/*         let contador = 0;
+        do {
+            contador = contador +1;
+            document.write(contador + "<br>");
+        }
+        while(contador<100);
+        document.write("VALOR CONTADOR"+contador); */
+        
+        // SI TENEMOS UN CONTADOR 1000 EL RESULTADO SERIA 1001 YA QUE POR LO MENOS DEBE ENTRAR UNA VEZ AL DO POR ESO SE LE SUMA 1
+        /* let contador = 1000;
+        do {
+            contador = contador +1;
+            document.write(contador + "<br>");
+        }
+        while(contador<100);
+        document.write("VALOR CONTADOR"+contador); */
+
+        // OTRAS FORMAS de incrementar al contador
+        let contador = 0;
+        do {
+            // contador = contador +1;
+            // contador += 10;
+            contador++;
+            document.write(contador + "<br>");
+        }
+        while(contador<100);
+        document.write("VALOR CONTADOR"+contador);
+    </script>
+</body>
+</html>

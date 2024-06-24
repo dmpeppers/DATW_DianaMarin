@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ejercicio</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 70px;
+        }
+        [type = 'text']{
+            width: 300px;
+        }
+        [type = 'tel']{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="Formulario basico" name="Formulario basico">Formulario Basico</h1>
+        <p id="salida1"><span id="nom"></span> <span id="ape"></span></p>
+        <p id="salida2"></p>
+    </main>
+    <form action="" name="Formulario" id="Formulario">
+        <fieldset>
+            <legend>Datos</legend>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" autofocus>
+            </p>
+            <p>
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido">
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="su telefono">
+            </p>
+            <p>
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+            </p>
+        </fieldset>
+        <p>
+            <input type="button" value="Enviame" onclick="escribirLeerForm()">
+            <input type="reset" value="Limpiar" >
+        </p>
+        <script>
+            let dia = new Date().getDay();
+            let mes = new Date().getMonth();
+        const DIA_SEMANA = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        const NOMBRE_MES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        function escribirLeerForm(){
+            document.getElementById("salida1").innerHTML = `Hola ${document.getElementById("nombre").value} ${document.getElementById("apellido").value} que tengas un buen ${DIA_SEMANA[dia]} del mes de ${NOMBRE_MES[mes]}`;
+            // document.getElementById("ape").innerHTML = document.getElementById("apellido").value;
+            document.getElementById("salida2").innerHTML = `Telefono: ${document.getElementById("telefono").value} y la Direccion: ${document.getElementById("direccion").value}`;
+        }
+        </script>
+    </form>
+</body>
+</html>

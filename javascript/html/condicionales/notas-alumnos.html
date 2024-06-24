@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTAS ALUMNOS</title>
+    <style>
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 4em;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 9 O 10 SOBRESALIENTE
+    7 8.99 NOTABLE 6 5 APROBADO -->
+    <h1>Notas Alumndos</h1>
+    <h2 id="notaAlumno"></h2>
+    <script>
+        let nota = prompt("Digita la Nota del 1 al 10");
+        if(nota > 9 && nota <= 10){
+            document.getElementById("notaAlumno").innerHTML = ` ${nota} = SOBRESALIENTE ( ˘ ³˘)ノ°ﾟº❍｡`;
+        }
+        else if (nota >7 && nota <=8.99){
+            document.getElementById("notaAlumno").innerHTML = ` ${nota} = NOTABLE ☜(⌒▽⌒)☞`;
+        }
+        else if (nota >5 && nota <= 6.99){
+            document.getElementById("notaAlumno").innerHTML = ` ${nota} = APROBADO (˵ ͡° ͜ʖ ͡°˵)`;
+        }
+        else if (nota < 5){
+            document.getElementById("notaAlumno").innerHTML = ` ${nota} = REPROBADO ୧༼ಠ益ಠ╭∩╮༽`;
+        }
+        else {
+            document.getElementById("notaAlumno").innerHTML = `No valido (⌐ ͡■ ͜ʖ ͡■) `;
+        }
+    </script>
+</body>
+</html>

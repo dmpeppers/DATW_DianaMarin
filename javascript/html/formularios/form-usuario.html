@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Usuario</title>
+</head>
+<body>
+    <h1>Formulario usuario</h1>
+    <p id="salida1"><span id="nom"></span> <span id="ape"></span></p>
+    <p id="salida2"></p>
+    <form action="" method="" id="formulario" name="formulario">
+        <fieldset>
+            <legend>Datos</legend>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre">
+            </p>
+            <p>
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido">
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono" disabled placeholder="su telefono">
+            </p>
+            <p>
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" id="direccion">
+            </p>
+        </fieldset>
+        <p>
+            <input type="button" value="Enviame" onclick="escribirLeerForm()">
+            <input type="reset" value="Limpiar" >
+        </p>
+    </form>
+   <script>
+        let dia = new Date().getDay();
+        const DIA_SEMANA = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        function escribirLeerForm(){
+            document.getElementById("salida1").innerHTML = `Hola ${document.getElementById("nombre").value} ${document.getElementById("apellidos").value}`;
+            // document.getElementById("ape").innerHTML = document.getElementById("apellido").value;
+        }
+   </script> 
+</body>
+</html>

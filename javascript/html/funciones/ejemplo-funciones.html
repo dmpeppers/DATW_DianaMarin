@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLO FUNCION</title>
+</head>
+<body>
+    <h1>Ejemplos con funciones</h1>
+    <script>
+        // declaracion de funcion
+/*         function datosPersonales(){
+            let nombre = prompt("Escriba su nombre");
+            let apellido = prompt("Escriba su apellido");
+            let edad = prompt("Escriva su edad:");
+            document.write(`<p style="color: blue;">Firmado: ${nombre} ${apellido}</p>`);
+        }
+        function datosPersonales2(nombre, apellido){
+            document.write(`<p style="color: red;">Firmado: ${nombre} ${apellido}</p>`);
+        } */
+
+        // funciones con numeros
+        function sumar(numero1, numero2){
+           if(typeof numero1 == undefined){
+            alert("La variable numero1 vale 0");
+            numero1=0;
+           }
+           if(typeof numero2 == undefined){
+            numero2 =0;
+           }
+           let total = numero1 + numero2;
+           return total;
+        }
+        function media(){
+            let valores = sumar(20, 25);
+            let resultado = valores/2;
+            document.write("La media es " +resultado)
+        }
+    </script>
+
+    <!-- Funciones de llamado -->
+    <script>
+        media();
+        // datosPersonales();
+/*         datosPersonales2("Ramiro I", "Rex de los astures");
+        let nombre_ = prompt("Nombre;");
+        let apellido_ = prompt("Apellidos:");
+        datosPersonales2(nombre_, apellido_); */
+    </script>
+</body>
+</html>

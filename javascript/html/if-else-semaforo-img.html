@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE SEMAFORO CON IMG</title>
+</head>
+<body>
+    <h1>IF-ELSE SEMAFORO CON IMG</h1>
+    <h2 id="salida"></h2>
+    <img src="../img/semaforo/semaforo-apagado.png" id="imgSemaforo" width="200" height="400">
+    <!-- <a href="" id="ancla2" target="_blank"></a>||
+    <a href="" id="ancla3" target="_blank"></a>||
+    <a href="" id="ancla1" target="_blank"></a>|| -->
+    <script>
+        // document.getElementById("ancla1").innerHTML = "Amazon";
+        // document.getElementById("ancla1").href = "https://www.amazon.es";
+        // document.getElementById("ancla2").innerHTML = "FNAC";
+        // document.getElementById("ancla2").href = "https://www.fnac.es";
+        // document.getElementById("ancla3").innerHTML = "El Corte Ingles";
+        // document.getElementById("ancla3").href = "https://www.elcorteingles.es";
+
+
+        // promt en semaforo
+        let color = prompt("Escribe un color:");
+        if (color == "rojo"){
+            document.getElementById("imgSemaforo").src = "../img/semaforo/semaforo-rojo.png";
+        }
+        else if (color == "amarillo"){
+            document.getElementById("imgSemaforo").src = "../img/semaforo/semaforo-amarillo.png";
+        }
+        else if (color == "verde"){
+            document.getElementById("imgSemaforo").src = "../img/semaforo/semaforo-verde.png";
+        }
+        else{
+            alert("Color no valido");
+            location.reload(color);
+        }
+
+    </script>
+</body>
+</html>

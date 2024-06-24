@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meses del año</title>
+    <style>
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 6em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MESES DEL AÑO</h1>
+    <h2 id="mesbox"></h2>
+    <script>
+        let mes = prompt("Escribe nombre del mes").toLowerCase();
+        switch(mes){
+            case 'enero':
+                document.getElementById("mesbox").innerHTML ="ENERO: 31 dias <br> _(:3」∠)_";
+                break;
+            case 'febrero':
+                document.getElementById("mesbox").innerHTML = "FEBRERO: 28 o 29 días <br> ┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴";
+                break;
+            case 'marzo':
+                document.getElementById("mesbox").innerHTML = "MARZO: 31 dias <br> ᕦ(⩾﹏⩽)ᕥ";
+                break;
+            case 'abril':
+                document.getElementById("mesbox").innerHTML = "ABRIL: 30 dias <br> L(° O °L)";
+                break;
+            case 'mayo':
+                document.getElementById("mesbox").innerHTML = "MAYO: 31 dias <br> ✌(-‿-)✌";
+                break;
+            case 'junio':
+                document.getElementById("mesbox").innerHTML = "JUNIO: 30 dias <br> ( •_•)O*¯`·.¸.·´¯`°Q(•_• )";
+                break;
+            case 'julio':
+                document.getElementById("mesbox").innerHTML = "JULIO: 31 dias <br> (☞ﾟヮﾟ)☞";
+                break;
+            case 'agosto':
+                document.getElementById("mesbox").innerHTML = "AGOSTO: 30 dias<br> (☝ ՞ਊ ՞)☝";
+                break;
+            case 'septiembre':
+                document.getElementById("mesbox").innerHTML = "SEPTIEMBRE: 31 dias <br> (=^･ｪ･^=))ﾉ彡☆";
+                break;
+            case 'octubre':
+                document.getElementById("mesbox").innerHTML = "OCTUBRE: 31 dias<br> ¯\\_(ツ)_/¯";
+                break;
+            case 'noviembre':
+                document.getElementById("mesbox").innerHTML = "NOVIEMBRE: 30 dias<br> (๑•́ ヮ •̀๑)";
+                break;
+            case 'diciembre':
+                document.getElementById("mesbox").innerHTML = "DICIEMBRE: 31 dias <br> (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ ";
+                break;
+            default:
+                document.getElementById("mesbox").innerHTML = ("Mes NO valido	(ᕗ ͠° ਊ ͠° )ᕗ  ");
+        }
+    </script>
+</body>
+</html>

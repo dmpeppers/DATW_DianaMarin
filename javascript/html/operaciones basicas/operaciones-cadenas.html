@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Cadena JS</title>
+</head>
+<body>
+    <h1>Operaciones con Cadena <abbr title="JavaScript">JS</abbr></h1>
+    <h2 id="marca"></h2>
+    <p id="dato1"></p>
+    <p id="dato2"></p>
+    <p id="dato3"></p>
+    <p id="dato4"></p>
+    <p id="dato5"></p>
+    <p id="dato6"></p>
+    <p id="dato7"></p>
+    <div id="descripcion"></div>
+    <script>
+        const SPACE = "<br>";
+        // declaracion de variables
+        let marca, modelo, cv, cc, color, puertas, combustible;
+        // inicializar la variable
+        marca = "Citröen";
+        modelo = "C4";
+        cv = "110cv";
+        cc = "1496cc";
+        color = `gris claro`;
+        puertas = "5";
+        combustible = "diesel";
+        // arrays
+        let vehiculo = ["Citröen", "C4", "110cv", "1496cc", "gris-claro", "5", "gasolin"];
+        let diasSemana = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+        let objetos = new Array("lavadora", 600, "Balay");
+        document.write(typeof diasSemana);
+        document.write(SPACE);
+        document.write(typeof objetos);
+        document.write(SPACE);
+        document.getElementById("marca").innerHTML = vehiculo[0];
+        document.getElementById("dato1").innerHTML = vehiculo[1];
+        document.getElementById("dato2").innerHTML = vehiculo[2];
+        document.getElementById("dato3").innerHTML = vehiculo[3];
+        document.getElementById("dato4").innerHTML = vehiculo[4];
+        document.getElementById("dato5").innerHTML = vehiculo[5];
+        document.getElementById("dato6").innerHTML = vehiculo[6];
+        // para poner comillas como forma de texto se pueden alternar el tipo de comillas o dobles o simples
+        let comentario = "El modelo `C4` de primera generacion data del año 2005";
+        // o tambien alternando con barrar concatenadas (caracteres de escape)
+        let comentario2 = "El modelo \"C4\" de primera generacion data del año 2005";
+        document.getElementById("dato7").innerHTML = comentario;
+        document.getElementById("descripcion").innerHTML = comentario2;
+    </script>
+</body>
+</html>

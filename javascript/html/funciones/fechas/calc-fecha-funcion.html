@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion de Calculo de Fecha</title>
+</head>
+<body>
+    <h1>Funcion de Calculo de Fecha</h1>
+    <h2 id="salida"></h2>
+    <script>
+        // funcion tradicional
+        function insertarFecha1(){
+            let fecha = new Date();
+        // numero del dia
+        let diaNum = fecha.getDate();
+        // para tener el nombre del dia
+        let dia = fecha.getDay();
+        let nombDia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        // para obtener el mes
+        let mes = fecha.getMonth();
+        let nombreMes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        // para obtener año
+        let anyo = fecha.getFullYear();
+        // salida
+        return document.getElementById("salida").innerHTML = `Fecha del ${diaNum} ${nombDia[dia]} de ${nombreMes[mes]} del ${anyo}`;
+        }
+        // funcion ripo anonima
+        const insertarFecha2 = function(){
+            let fecha = new Date();
+        // numero del dia
+        let diaNum = fecha.getDate();
+        // para tener el nombre del dia
+        let dia = fecha.getDay();
+        let nombDia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        // para obtener el mes
+        let mes = fecha.getMonth();
+        let nombreMes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        // para obtener año
+        let anyo = fecha.getFullYear();
+        // salida
+        return document.getElementById("salida").innerHTML = `Fecha del ${diaNum} ${nombDia[dia]} de ${nombreMes[mes]} del ${anyo}`;
+        }
+        // tipo fecha
+        const insertarFecha3 = () =>{
+            let fecha = new Date();
+        // numero del dia
+        let diaNum = fecha.getDate();
+        // para tener el nombre del dia
+        let dia = fecha.getDay();
+        let nombDia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        // para obtener el mes
+        let mes = fecha.getMonth();
+        let nombreMes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        // para obtener año
+        let anyo = fecha.getFullYear();
+        // salida
+        return document.getElementById("salida").innerHTML = `Fecha del ${diaNum} ${nombDia[dia]} de ${nombreMes[mes]} del ${anyo}`;   
+        }
+        // llamada a las funciones
+        insertarFecha3();
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Basicas con js</title>
+</head>
+<body>
+    <h1>Operaciones Básicas con JS</h1>
+    <script>
+        // Operaciones matematicas basicas
+        // Declaracion deconstante
+        const PI = 3.141516;
+        console.log(PI);
+        const SEPARADOR = "<br>";
+        const SEPARADOR2 = "<br>===========================<br>"
+        // Declaracion de variables
+        let numero1, numero2;
+        let numero3 = 20, numero4 = 30;
+        let numero5 = "20";
+        numero1 = 150;
+        numero2 = 150.8;
+        // proceso
+        let total;
+        total = numero1 + numero2;
+        document.write("Total: "+total + SEPARADOR);
+        document.write(typeof total + SEPARADOR2);
+        total = numero1+ numero3 + numero4 + numero2 + numero5;
+        document.write(total + SEPARADOR);
+        document.write(typeof total);
+        
+        let nombreCompleto = "Juan Luis Martínez Gonzáles";
+        let edad = 33;
+        document.write(SEPARADOR2);
+        document.write(edad + 1 + SEPARADOR + nombreCompleto);
+    </script>
+</body>
+</html>

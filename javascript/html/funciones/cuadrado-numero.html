@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado numero</title>
+</head>
+<body>
+    <h1 id="salida"></h1>
+    <script>
+        // definicion de funciones
+        function cuadrado1(num){
+            return num * num;
+        };
+        // funcion como valor
+        let cuadrado2 = function(num){
+            return num * num;
+        };
+        // cuadrado2 = function(num1, num2){
+        //     return num1*num2;
+        // };
+        // funciones tipo flecha (para solventar casos rapidos)
+        const cuadrado3 = (num) => {return num * num};
+        const cuadrado3bis = num => num * num ;
+        // ^^ hay dos formas de escritura para las funciones de flechas
+        
+        document.getElementById("salida").innerHTML = cuadrado3bis(9);
+    </script>
+</body>
+</html>

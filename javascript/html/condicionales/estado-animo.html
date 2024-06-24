@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Animo</title>
+    <style>
+        h1 {
+            font-size: 5em;
+        }
+        h2 {
+            font-size: 7em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estados de Animo</h1>
+    <h2 id="estadoanimo"></h2>
+    <script>
+        // Programa que muestra mis estados de animo
+        // Alegre :)  Triste :( Ni fu ni fa :| Chispeante ;) Frustrado :/
+        let animo = prompt("Ingresa tu estado de animo :)  :(   :|  ;)  :/")
+        if(animo == ":)"){
+            document.getElementById("estadoanimo").innerHTML = "Alegre ( ˘ ³˘)ノ°ﾟº❍｡";
+        }
+        else if(animo == ":("){
+            document.getElementById("estadoanimo").innerHTML = ("Triste ( ╥﹏╥) ノシ");
+        }
+        else if(animo == ":|"){
+            document.getElementById("estadoanimo").innerHTML = ("Ni fu ni fa (˵ ͡° ͜ʖ ͡°˵) ");
+        }
+        else if(animo == ";)"){
+            document.getElementById("estadoanimo").innerHTML = ("Chispeante (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ ");
+        }
+        else if(animo == ":/"){
+            document.getElementById("estadoanimo").innerHTML = ("Frustrado ʕノ•ᴥ•ʔノ ︵ ┻━┻");
+        }
+        else {
+            document.getElementById("estadoanimo").innerHTML = ("Estado NO valido	(ᕗ ͠° ਊ ͠° )ᕗ  ");
+        }
+    </script>
+</body>
+</html>

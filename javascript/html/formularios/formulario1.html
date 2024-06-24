@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 1</title>
+    <style>
+        label {
+            display: block;
+        }
+        #primero input[type=text]  {
+            width: 500px;
+            border: none;
+            background-color: rgb(200, 200, 200);
+            padding: 7px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <form action="datos.php" method="get" name="miformulario" id="miformularioid">
+        <fieldset id="primero">
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escriba su nombre" name="nombre" maxlength="50" autofocus>
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" placeholder="Escriba sus apellidos" name="apellidos" maxlength="">
+            </p>
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" min="10" max="105" name="edad">
+            </p>
+            <p>
+                <label for="estado-civil">Estado Civil:</label>
+                <select name="estado-civil" id="estado-civil">
+                    <option value="" selected hidden></option>
+                    <option value="casado">Casado</option>
+                    <option value="soltero">Soltero</option>
+                    <option value="viudo">Viudo</option>
+                    <option value="divorciado">Divorciado</option>
+                </select>
+            </p>
+            <p>
+                <label for="e-mail">E-mail: </label>
+                <input type="email" id="e-mail" name="e-mail" placeholder="Escriba su e-mail" required>
+            </p>
+            <p>
+                <label for="txt-url">Web: </label>
+                <input type="url" id="txt-url" name="txt-url" placeholder="Si tiene pagina web escriba su URL">
+            </p>
+            <p>
+                <label for="telef">Telefono: </label>
+                <input type="tel" id="telef" name="telef">
+            </p>
+            <p>
+                <label for="pwd">Contraseña:</label>
+                <input type="password" id="pwd" name="pwd">
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <p>
+                <label for="fecha">Fecha: </label>
+                <input type="date" id="fecha" name="fecha">
+            </p>
+            <p>
+                <label for="fecha-hora">Fecha y hora:</label>
+                <input type="datetime-local" id="fecha-hora" name="fecha-hora">
+            </p>
+            <p>
+                <label for="num-mes">Numero del mes:</label>
+                <input type="month" id="num-mes" name="num-mes">
+            </p>
+            <p>
+                <label for="horas-minutos">Horas/minutos:</label>
+                <input type="time" id="horas-minutos" name="horas-minutos">
+            </p>
+            <p>
+                <label for="colorin">Colo:</label>
+                <input type="color" name="colorin" id="colorin">
+            </p>
+            <p>
+                <label for="rango">Rango:</label>
+                <input type="range" min="0" max="100" value="80" id="rango" name="rango">
+            </p>
+            <p>Selecciones sus preferencias: 
+            <label for="paro">Desempleado: </label>
+            <input type="radio" name="empleo" id="paro" value="desempleado">
+            <label for="ocupado">Ocupado</label>
+            <input type="radio" name="ocupado" id="ocupado">
+            </p>
+            <p>Seleccione sus preferencias:
+                <label for="revista">¿Desea recibir nuestra revista?</label>
+                <input type="checkbox" id="revista" name="revista" checked value="Solicitud revista">
+                <label for="info">Informacion: </label>
+                <input type="checkbox" name="info" id="info" value="Solicitud Informacion">
+            </p>
+            <p>
+                <label for="subir">Subir imagen:</label>
+                <input type="file" id="subir" name="subir">
+            </p>
+            <p>
+                <label for="autonomiasEsp"><abbr title="Comunidades Autonomas de España">CCAA</abbr></label>
+                <select name="autonomiasEsp" id="autonomiasEsp">
+                    <option value="" selected hidden></option>
+                    <option value="andalucia">Andalucia</option>
+                    <option value="aragon">Aragón</option>
+                    <option value="principado-asturias">Principado de Asturias</option>
+                    <option value="illes-balears">Islas Baleares</option>
+                    <option value="canarias">Canarias</option>
+                    <option value="cantabria">Cantabria</option>
+                    <option value="castilla-leon">Castilla y León</option>
+                    <option value="castilla-la-mancha">Castilla - La Mancha</option>
+                    <option value="catalunya">Cataluña</option>
+                    <option value="valencia">Comunidad Valenciana</option>
+                    <option value="extremadura">Extremadura</option>
+                    <option value="galicia">Galicia</option>
+                    <option value="madrid">Comunidad de Madrid</option>
+                    <option value="murica">Region de murcia</option>
+                    <option value="navarra">Comunidad Foral de Navarra</option>
+                    <option value="pais-vasco">Pais Vasco</option>
+                    <option value="rioja">La Rioja</option>
+                </select>
+            </p>
+            <p>
+                <label for="coches">Coches: </label>
+                <input type="text" id="coches" name="coches" >
+                <datalist id="vehiculos">
+                    <option value="Seat Leon" label="SEAT">
+                    <option value="Ford Mondeo" label="FORD">
+                    <option value="C4DS" label="CITROËN">
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Comentario</legend>
+            <textarea name="comentario" id="comentario" cols="50" rows="10" maxlength="200"></textarea>
+        </fieldset>
+        <p>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+            <input type="button" value="button">
+            <input type="image" src="../../img/paisajes/Red_lanterns_Chengdu_Sichuan_China.jpg" width="100" alt="boton">
+        </p>
+    </form>
+</body>
+</html>

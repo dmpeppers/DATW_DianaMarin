@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USUARIO Y CONTRASEÑA</title>
+</head>
+<body>
+    <h1>USUARIO Y CONTRASEÑA</h1>
+    <h2 id="info"></h2>
+    <script>
+        let user;
+        user = prompt("Introducir Usuario").toLowerCase();
+        // la contraseña nunca se debe colocar to lower case, ya que hay contrseñas que pueden tener mayusculas y minusculas
+        // password = prompt("Introducir Contraseña");
+        // if (user == 'diana' && password == '123'){
+        //     document.getElementById("info").innerHTML = `Bienvenida `+ user +`(☝ ՞ਊ ՞)☝`;
+        // }
+        // else if (user == 'diana'&& password!='123'){
+        //     document.getElementById("info").innerHTML = `Contraseña incorrecta `;
+
+        // }
+        // else {
+        //     document.getElementById("info").innerHTML = `Usuario no Valido`;
+        // }
+        if(user =='diana'){
+            alert("Usuario corrrecto");
+            let password = prompt("Introducir Contraseña");
+            if(password=='123'){
+                document.getElementById("info").innerHTML = `Bienvenido/a  `+ user +`  (☝ ՞ਊ ՞)☝`;
+            }
+            else{
+                document.getElementById("info").innerHTML = `CONTRASEÑA INCORRECTO`;
+                alert("Contraseña incorrrecta");
+                location.reload(password);
+            }
+        }
+        else{
+            alert("Usuario incorrrecto");
+            location.reload(user);
+        }
+    </script>   
+</body>
+</html>

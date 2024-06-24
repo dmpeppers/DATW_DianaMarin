@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos 3</title>
+</head>
+<body>
+    <script>
+        function separador(){
+            document.write("<p>================================</p>")
+        }
+        // definicion de objeto
+        function Personas(nombre, sexo, edad, altura, nacionalidad, foto){
+            this.nombre = nombre;
+            this.sexo = sexo;
+            this.edad = edad;
+            this.altura = altura;
+            this.nacionalidad = nacionalidad;
+            this.foto = '../../img/04_imagenes_caritas/04_imagenes_caritas/' +foto;
+            this.hablarInglesSi = function(){
+                document.write("<p>Habla ingles</p>");
+            };
+            this.hablarInglesNo = function(){
+                document.write("<p>No Habla ingles</p>");
+            };
+            this.MostrarFichaPersona = function(){
+                separador();
+                document.write(`<p>Nombre : ${nombre}</p>`);
+                document.write(`<p>Edad : ${this.edad}</p>`);
+                document.write(`<p>Genero : ${this.sexo}</p>`);
+                document.write(`<p>Altura : ${this.altura}</p>`);
+                document.write(`<p>Nacionalidad : ${this.nacionalidad}</p>`);
+                document.write(`<p><img src='${this.foto}'></p>`);
+                separador();
+            };
+            this.aburrido = () =>{
+                document.write(`Estado de animo: <img src = '../../img/04_imagenes_caritas/04_imagenes_caritas/carita1.png' width=50px>`);
+            }
+            this.sorprendido = () =>{
+                document.write(`Estado de animo: <img src = '../../img/04_imagenes_caritas/04_imagenes_caritas/carita6.png' width=50px>`);
+            }
+        };
+        let diana = new Personas("Diana Marin", "Femenino", 27, "1.66", "Colombiana", "pedro.gif");
+        let carlos = new Personas("Carlos Marin", "Maculino", 16, "1.70", "Colombiano", "sorpresa.gif");
+        
+        // llamar la funcion
+        diana.MostrarFichaPersona();
+        document.write(`La persona es ${diana.nombre} es de genero ${diana.sexo}, su edad es ${diana.edad} con una altura de ${diana.altura} y su Nacionalidad es ${diana.nacionalidad}`);
+        diana.hablarInglesSi();
+        diana.aburrido();
+
+        carlos.MostrarFichaPersona();
+        document.write(`La persona es ${carlos.nombre} es de genero ${carlos.sexo}, su edad es ${carlos.edad} con una altura de ${carlos.altura} y su Nacionalidad es ${carlos.nacionalidad}
+        `);
+        carlos.hablarInglesNo();
+        carlos.sorprendido();
+        separador();
+
+    </script>
+</body>
+</html>

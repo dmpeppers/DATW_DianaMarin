@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine</title>
+    <style>
+        #interior, form{
+            background-color: bisque;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        select{
+            padding: 7px;
+            margin-top: 7px;
+        }
+        label{
+            display: block;
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 20px;
+        }
+        img#puntuacion{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="formulario" name="formulario">
+        <label for="listado-peliculas">Listado Peliculas</label>
+        <select name="listado-peliculas" id="listado-peliculas" onchange="lanzar();">
+            <option value="" selected hidden>Elija una Pelicula</option>
+            <option value="El quinto elemento">El quinto elemento</option>
+            <option value="Terminator">Terminator</option>
+            <option value="La princesa prometida">La princesa prometida</option>
+            <option value="Alien">Alien</option>
+        </select>
+    </form>
+    <div id="interior">
+        <h2 id="titulo"></h2>
+        <img src="" alt="" id="caratula">
+        <img src="" alt="" id="puntuacion">
+        <p id="valoracion"></p>
+        <p id="genero"></p>
+        <p id="anio"></p>
+    </div>
+    <script>
+        function Pelicula(titulo, genero, anio, valoracion){
+            // declaracion de propiedades
+            this.titulo = titulo;
+            this.genero = genero;
+            this.anio = anio;
+            this.valoracion = parseInt(valoracion);
+            this.img = "";
+            this.textoAlternativo = ""; 
+            // declaracion de metodos
+            this.mostrarFicha = function(parametro){
+                if(parametro === this.titulo){
+                    document.getElementById("titulo").innerHTML = this.titulo;
+                    document.getElementById("genero").innerHTML = this.genero;
+                    document.getElementById("anio").innerHTML = this.anio;
+                    document.getElementById("valoracion").innerHTML = `Valoracion : ${this.valoracion}`;
+                    document.getElementById("caratula").src = this.img;
+                 if(this.valoracion >= 8 && this.valoracion <= 10){
+                    document.getElementById("puntuacion").src = "../../img/valoracion/tres-medallas.svg";
+                 }
+                 else if(this.valoracion >= 6){
+                    document.getElementById("puntuacion").src = "../../img/valoracion/dos-medallas.svg";
+                 }
+                 else if(this.valoracion >= 5){
+                    document.getElementById("puntuacion").src = "../../img/valoracion/una-medalla.svg";
+                 }
+                 else{
+                    document.getElementById("puntuacion").src = "../../img/valoracion/sin-medalla.svg";
+                 }
+                }
+            }
+        }
+        let pelicula1 = new Pelicula("El quinto elemento", "ciencia-ficcion","accion",1997,6);
+        pelicula1.img = "../../img/retratos/el_quinto_elemento.jpg";
+        let pelicula2 = new Pelicula("Terminator", "ciencia-ficcion", 1984, 8);
+        pelicula2.img = "../../img/retratos/Terminator_t800.jpg";
+        let pelicula3 = new Pelicula("La princesa prometida", "fantasia, accion", 1987, 9);
+        pelicula3.img = "../../img/retratos/Laprincesaprometida_fezzik.jpg";
+        let pelicula4 = new Pelicula("Alien", "ciencia-ficcion", 1979, 5);
+        pelicula4.img = "../../img/retratos/Alien_ripley.jpg";
+
+        function lanzar(){
+            let valor = document.getElementById("listado-peliculas").value;
+            pelicula1.mostrarFicha(valor);
+            pelicula2.mostrarFicha(valor);
+            pelicula3.mostrarFicha(valor);
+            pelicula4.mostrarFicha(valor);
+        }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHILE EJ 3</title>
+</head>
+<body>
+    <script>
+        const SALTO = "<br>";
+        let booleano = true;
+        // si colocamos while(!booleano) el codigo nunca entra en el bucle
+        while(booleano){
+            document.write("El valor de booleano es :" + booleano);
+            booleano = false;
+        }
+        document.write(SALTO);
+        document.write("El programa continúa aqui");
+        document.write(SALTO);
+        document.write("Valor de booleano: " + booleano);
+    </script>
+</body>
+</html>

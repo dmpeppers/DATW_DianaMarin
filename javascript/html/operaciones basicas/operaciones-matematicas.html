@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matematicas con JS</title>
+</head>
+<body>
+    <h1>Operaciones matematicas basicas con <abbr title="JavaScript">JS</abbr></h1>
+    <h2>Operaciones con decimales</h2>
+    <p id="decimal1"></p>
+    <p id="decimal2"></p>
+    <p id="decimal3"></p>
+    <p id="decimal4"></p>
+    <p id="decimal5"></p>
+    <p id="decimal6"></p>
+    <p id="decimal7"></p>
+    <p id="decimal8"></p>
+    <p id="decimal9"></p>
+    <p id="decimal10"></p>
+    <h2>Operaciones sin decimales</h2>
+    <script>
+        const SEPARADOR = "<br>";
+        const SEPARADOR2 = "<br>========================<br>"
+        // Operadores matemáticcos básicos
+        // *, /, +, -, %
+        // SUMA
+        let entero1 = 22, entero2 = 33, total;
+        total = entero1 + entero2;
+        document.write("Ejemplo de suma: "+SEPARADOR);
+        document.write("La suma de " + entero1 + " + " + entero2 + " = " + total);
+        // otra forma de imprimir variables
+        console.log(`La suma de ${entero1} + ${entero2} = ${total}`);
+
+        // RESTA
+        total = entero1 - entero2;
+        document.write(SEPARADOR2 +"Ejemplo de resta: "+SEPARADOR);
+        document.write(`La resta de ${entero1} - ${entero2} = ${total}`);
+
+        // otra forma de imprimir variables
+        alert("Ejemplos con JavaScript\nsuma y restra")
+
+        // MULTIPLICACION
+        total = entero1 * entero2;
+        document.write(SEPARADOR2 + "Ejemplo de multiplicacion: " + SEPARADOR);
+        document.write(`La multiplicacion de ${entero1} * ${entero2} = ${total}`);
+
+        // DIVISION
+        total = entero1 / entero2;
+        document.write(SEPARADOR2 + "Ejemplo de division: " + SEPARADOR);
+        document.write(`La division de ${entero1} / ${entero2} = ${total}`);
+
+        // RESTO o MODULO
+        entero3 = 8;
+        entero4 = 2;
+        total2 = entero3 % entero4;
+        document.write(SEPARADOR2 + "El modulo de: " + SEPARADOR);
+        document.write(`El modulo de ${entero3} % ${entero4} = ${total2}`);
+
+        // SUMA DECIMALES
+        let decimal1 = 44.5;
+        let decimal2 = 55.9;
+        total = decimal1 + decimal2;
+        document.getElementById("decimal1").innerHTML = `${SEPARADOR2} ${SEPARADOR} La suma de decimales de: ${SEPARADOR}`;
+        document.getElementById("decimal2").innerHTML = `La suma de decimales de: ${decimal1} + ${decimal2} = ${total}`;
+
+        // RESTA DECIMALES
+        total = decimal1 - decimal2;
+        document.getElementById("decimal3").innerHTML = `${SEPARADOR2} ${SEPARADOR} La resta de decimales de: ${SEPARADOR}`;
+        document.getElementById("decimal4").innerHTML = `La resta de decimales de: ${decimal1} - ${decimal2} = ${total}`;
+
+        // MULTIPLICACION DECIMALES
+        total = decimal1 * decimal2;
+        document.getElementById("decimal5").innerHTML = `${SEPARADOR2} ${SEPARADOR} La multiplicacion de decimales de: ${SEPARADOR}`;
+        document.getElementById("decimal6").innerHTML = `La multiplicacion de decimales de: ${decimal1} * ${decimal2} = ${total}`;
+
+        // DIVISION DE DECIMALES
+        total = decimal1 / decimal2;
+        document.getElementById("decimal7").innerHTML = `${SEPARADOR2} ${SEPARADOR} La Division de decimales de: ${SEPARADOR}`;
+        document.getElementById("decimal8").innerHTML = `La division de decimales de: ${decimal1} / ${decimal2} = ${total}`;
+
+        // RESTO O MODULO
+        total = decimal1 % decimal2;
+        document.getElementById("decimal9").innerHTML = `${SEPARADOR2} ${SEPARADOR} El modulo de decimales de: ${SEPARADOR}`;
+        document.getElementById("decimal10").innerHTML = `El modulo de decimales de: ${decimal1} % ${decimal2} = ${total} ${SEPARADOR2}`;
+
+        // POTENCIAS
+        console.log(`El numero ${entero1} elevado a 2 es ${entero1**2}`)
+    </script>
+</body>
+</html>

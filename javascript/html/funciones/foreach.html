@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso For - Each</title>
+</head>
+<body>
+    <script>
+        let diasSemana = ["lunes","martes", "miercoles", "jueves"];
+        diasSemana.push("viernes", "sabado","domingo");
+ /*        te permite arreglar el contenido del array en el orden del abecedario
+        diasSemana.sort(); */
+        // document.write(diasSemana);
+        
+/* For each para una funcion, o un proceso */
+        // diasSemana.forEach((elementos, indice) => document.write(`<br>El indice ${indice} - ${elementos}`));
+
+/* For each para una funcion, o un proceso  tambien funciona con map*/
+
+        diasSemana.map((temporal, posicion) => document.write(`El indice ${posicion} - ${temporal}<br>`)
+    ); 
+        let salarios =[500,1000,2000,3000];
+        let aumentoSalarios = salarios.map(
+            function(elementomap){
+                let aumento = 10;
+                return ((elementomap*10)/100)+elementomap;
+            }
+        );
+        document.write(aumentoSalarios);
+
+        /* For each suando {} para poder implementar mas de una funcion o proceso */
+        diasSemana.forEach((elementos, indice) => {
+            document.write(`El indice ${indice} - ${elementos}`);
+            document.write("<p>===comprobacion===</p>")
+        })
+
+        // otros ejemplos
+        let objetos =["Lavadora", "Vitro", "computador", "portatil", "estufa", "coche", "destornillador", "aspiradora"];
+        objetos.sort();
+        objetos.forEach(function(elementos,indice){
+            document.write(`(${indice})- ${elementos} <br>`);
+        });
+    </script>
+</body>
+</html>

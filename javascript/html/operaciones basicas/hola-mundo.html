@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo con js</title>
+</head>
+<body>
+    <h1 id="bienvenida"></h1>
+    <script>
+        // Creado el 24/04/24
+        // Autor: Diana Marin
+        /*Este script muestra el nombre 
+        y los apellidos de su creador*/
+        let nombre = "Diana";
+        let apellido1 = "Marin", apellido2 = 'Zamora';
+        let nombreCompleto = nombre + " " + apellido1 + " " + apellido2;
+        // imprime informacion en el html
+        // document.write("Bienvenido/a " +nombreCompleto);
+        // escribe en consola
+        console.log("Hola " + nombreCompleto);
+        /* para escribir en el objeto del html hay que apuntar al 
+        elemento con .getElementById y escribes dentro del elemento con .innerHTML */
+        document.getElementById("bienvenida").innerHTML = "Bienvenido/a " + nombreCompleto; 
+    </script>
+</body>
+</html>

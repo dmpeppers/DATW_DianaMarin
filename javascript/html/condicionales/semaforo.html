@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMAFORO</title>
+    <style>
+        h2 {
+            font-size: 6em;
+            text-align: center;
+            margin: 30px;
+            padding: 30px;
+            text-shadow: 3px 3px 3px black;
+
+        }
+        .rojo {
+            background-color: rgba(255, 0, 0, 0.914);
+            color: white;
+        }
+        .amarillo {
+            background-color: rgba(255, 255, 0, 0.907);
+        }
+        .verde {
+            background-color: rgba(0, 128, 0, 0.936);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>SEMAFORO</h1>
+    <h2 id="estadosemaforo"></h2>
+    <script>
+        let colorSemaforo = prompt("Indique el estado del semaforo: (Rojo 'R', Amarillo 'A', Verde 'V')");
+        if(colorSemaforo == "R"){
+            document.getElementById("estadosemaforo").innerHTML = "Rojo | STOP | ୧༼ಠ益ಠ༽୨"
+            document.getElementById("estadosemaforo").className = "rojo";
+        }
+        else if(colorSemaforo == "V"){
+            document.getElementById("estadosemaforo").innerHTML = "Verde | GO | ᕕ(⌐■_■)ᕗ ♪♬"
+            document.getElementById("estadosemaforo").className = "verde";
+        }
+        else if(colorSemaforo == "A"){
+            document.getElementById("estadosemaforo").innerHTML = "Amarillo | WAIT | (ಥ﹏ಥ) "
+            document.getElementById("estadosemaforo").className = "amarillo";
+
+
+        }
+        else{
+            document.getElementById("estadosemaforo").innerHTML = "ESTADO NO VALIDO (;´༎ຶД༎ຶ`)"
+        }
+    </script>
+</body>
+</html>

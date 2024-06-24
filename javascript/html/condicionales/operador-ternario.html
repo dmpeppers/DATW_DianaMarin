@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Ternarias</title>
+</head>
+<body>
+    <h2>Ejemplo operador ternario</h2>
+    <script>
+  /*condición ? expr1 : expr2;
+    condición es una expresión que se evalúa como true o false.
+    expr1 es el valor que se devuelve si la condición es true.
+    expr2 es el valor que se devuelve si la condición es false.
+    Aquí tienes algunos ejemplos de cómo usar el operador ternario en JavaScript: 
+    const isMember = true;
+    const cuota = isMember ? "$2.00" : "$10.00";
+    console.log("La cuota es de: " + cuota); si isMember es true, se mostrará “La cuota es de: $2.00”; de lo contrario, se mostrará “La cuota es de: $10.00”*/
+        let oscar = prompt("¿Tiene Oscar?", "No").toLowerCase();
+        let respuesta = (oscar == "si" || oscar == "sí")? "Si, tiene Oscar" : "No, no tiene Oscar";
+        document.write(respuesta);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos 2</title>
+</head>
+<body>
+    <script>
+        function separador(){
+            document.write("<p>================================</p>")
+        }
+        // Metodo 2. Con function, este si crea una plantilla para definir nuevos objetos
+        function Vehiculo(valorMarca,valorModelo,valorColor){
+            // declaracion variables
+            let tipoCombustible = "gasolina";
+            let estadoVehiculo = "nuevo";
+            // declaracion propiedades
+            this.marca = valorMarca;
+            this.modelo = valorModelo;
+            this.color = valorColor;
+            this.combustible = tipoCombustible;
+            this.numRuedas = 4;
+            this.estado = estadoVehiculo;
+
+            // declaracion de metodos(su funcionalidad es la misma que las funciones)
+            this.arrancar = function(){
+                document.write("<p> Broommmmmm!</p>");
+            };
+            this.detener = () =>{
+                document.write(`<p>Soooooooo!</p>`);
+            };
+        };
+        // declaracion de instancias (copias) del objeto vehiculo
+        let cocheDiego = new Vehiculo("Audi", "A1", "Azul");
+
+        let cocheMarga = new Vehiculo("Honda", "Civic", "Verde");
+
+        let cocheNacho = new Vehiculo("BMW", "Hommage", "Gris Claro");
+
+        // imprimir por pantalla
+        separador();
+        document.write(`<p>La marca del coche de Diego es: ${cocheDiego.marca} y el modelo es: ${cocheDiego.modelo} el color del coche es: ${cocheDiego.color}</p>`);
+        separador();
+        document.write(`<p>La marca del coche de Marga es: ${cocheMarga.marca} y el modelo es: ${cocheMarga.modelo} el color del coche es: ${cocheMarga.color}</p>`);
+        separador();
+        document.write(`<p>La marca del coche de Nacho es: ${cocheNacho.marca} y el modelo es: ${cocheNacho.modelo} el color del coche es: ${cocheNacho.color}</p>`);
+        separador();
+
+    </script>
+</body>
+</html>
