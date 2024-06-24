@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        div{
+            width: 500px;
+            height: 100px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+        #elemento-1 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            margin: 0;
+            background-color: red;
+            bottom: 0px;
+            right: 0px;
+        }
+        #elemento-2 {
+            position: relative;
+            background-color: green;
+            top: 0px;
+            left: 0px;
+        }
+        #elemento-3 {
+            position: static;
+            background-color: blue;
+            top: 0px;
+            left: 0px;
+        }
+        #elemento-4 {
+            position: static;
+            background-color: rgb(150, 150, 150);
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- (div#elemento-${Elemento $})*4 -->
+    <div id="elemento-2">
+        <div id="elemento-1">Elemento 1</div>
+        Elemento 2
+    </div>
+    <div id="elemento-3">Elemento 3</div>
+    <div id="elemento-4">Elemento 4</div>
+</body>
+</html>

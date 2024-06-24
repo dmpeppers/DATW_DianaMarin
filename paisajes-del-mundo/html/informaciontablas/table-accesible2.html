@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla accesible</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            width: 100%;
+        }
+        table caption {
+            background: #000;
+            color: hotpink;
+            font-size: 1em;
+            line-height: 1.5;
+            padding: 0;
+            text-transform: uppercase;
+        }
+        table td, table th {
+            border: 1px solid gray;
+            border-spacing: 0;
+            font-size: 1em;
+            padding: 5px;
+            text-align: left;
+            margin: 10px;
+            white-space: nowrap;
+        }
+        table>thead>tr>th:nth-child(6), table>tbody>tr>td:nth-child(6){
+            text-align: right;
+        }
+        @media screen and (max-width:620px){
+            table{
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Ejemplo de tabla adaptativa</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Empresa</th>
+                <th>F. movimiento</th>
+                <th>Tipo</th>
+                <th>Concepto</th>
+                <th>Importe</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-field="ID">1</td>
+                <td data-field="Empresa">Consultores SA</td>
+                <td data-field="F. movimiento">30-12-2019</td>
+                <td data-field="Tipo">Ingreso</td>
+                <td data-field="Concepto">Nomina</td>
+                <td data-field="Importe">+1268.00&euro;</td>
+                <td data-field="Estado">Efectuado</td>
+            </tr>
+            <tr>
+                <td data-field="ID">2</td>
+                <td data-field="Empresa">Carrefour</td>
+                <td data-field="F. movimiento">01-01-2020</td>
+                <td data-field="Tipo">Recibo</td>
+                <td data-field="Concepto">Supermercado</td>
+                <td data-field="Importe">-128.56&euro;</td>
+                <td data-field="Estado">Efectuado</td>
+            </tr>
+            <tr>
+                <td data-field="ID">3</td>
+                <td data-field="Empresa">El Corte Ingles</td>
+                <td data-field="F. movimiento">03-01-2020</td>
+                <td data-field="Tipo">Recibo</td>
+                <td data-field="Concepto">Chaqueta hombre L-XL</td>
+                <td data-field="Importe">-99.99&euro;</td>
+                <td data-field="Estado">Pendiente</td>
+            </tr>
+            <tr>
+                <td data-field="ID">4</td>
+                <td data-field="Empresa">El Corte Ingles</td>
+                <td data-field="F. movimiento">03-01-2020</td>
+                <td data-field="Tipo">Recibo</td>
+                <td data-field="Concepto">Pantalon hombre M-L</td>
+                <td data-field="Importe">-48.50&euro;</td>
+                <td data-field="Estado">Pendiente</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

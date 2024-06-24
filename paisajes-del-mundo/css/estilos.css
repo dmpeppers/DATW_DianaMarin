@@ -1,0 +1,12 @@
+/* pegado de ejemplos herencia */
+img {
+    width: 500px;
+    margin-bottom: 25px;
+}
+/* #uno>img afecta directamente los desendientes directos (SOLAMENTE LOS DIRECTOS!) del elemento uno si colocamos
+#uno img donde no le colocamos el > y solo dejamos un espacio, el estilo afecta a todos los desendientes que se apuntan */
+#tres img {
+    filter: sepia(80%);
+    /* genera un tipo de efecto sombra al bloque box-shadow : X Y intensidad difuminado color dela sombra; */
+    /* box-shadow: 5px 5px 8px rgb(124, 4, 4); */
+}

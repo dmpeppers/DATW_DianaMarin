@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/*Definicion de variables*/
+:root {
+    --color-borde-elemento: rgba(120, 120, 121, 0.626);
+}
+/*================quitar todo tipo de margenes=================== */
+body {
+    margin: 0px;
+}
+/*===============ENCABEZADO=================*/
+header {
+    position: relative;
+    height: 50vh;
+    background-image: url("../img/Espanya/Madrid_Spain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
+h1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 3px 3px 3px black;
+}
+/*=============0ETIQUETAS NAVEGACION===========*/
+nav{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.626);
+    /* border-radius: -2px 5px 5px rgba(0, 0, 0, 0.626); */
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+nav a {
+    width: calc(100% /5);
+    text-align: center;
+    /* border: 1px solid rgb(0, 0, 0); */
+    padding: 10px;
+    /* text-transform: uppercase; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(220, 247, 197);
+    text-decoration: none;
+    border-top: 4px solid black;
+    border-bottom: 4px solid rgb(10, 8, 34);
+    transition-duration: .5s;
+}
+/* animacion para cambiar color cuando cursor pasa por la seccion */
+nav a:hover {
+    background-color: rgba(6, 6, 68, 0.87);
+    border-bottom: 4px solid rgb(4, 1, 34);
+    border-top: 4px solid rgba(6, 6, 68, 0.87);
+    color: white;
+}
+/*===========ETIQUETAS MAIN=======================*/
+/*======ID=======*/
+#contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+main {
+    width: 85%;
+    margin-bottom: 66px;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}        
+section>h2 {
+    /* por el tema de wrap para que funcione */
+    width: 100%;
+    margin-right: 20%;
+    margin-left: 20%;
+    /* background-color: rgba(134, 185, 212, 0.462); */
+    /* inicializamos el font o en el h o p o como clase */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* podemos tambien cambiar la altura del texto */
+    font-size: 3.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 4px solid var(--color-borde-elemento);
+    border-radius: 20px;
+    color:rgba(42, 42, 42, 0.986);
+}
+section>article:nth-of-type(4) {
+    display: none;
+}
+article {
+    width: calc(96%/3);
+    padding: 10px;
+    /* incorpora el padding para que el ancho del border se cuenta por dentro envez de afuera, es el antiguo border de internet explorer */
+    box-sizing: border-box;
+    border: 4px solid var(--color-borde-elemento);
+    border-radius: 25px;
+    margin-right: .5%;
+    margin-left: .5%;
+    box-shadow: -2px 10px 10px rgba(94, 94, 94, 0.626);
+}
+h3 {
+    text-align: center;
+    border-bottom: 4px solid var(--color-borde-elemento);
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+    font-size: x-large;
+    padding-bottom: 8px; 
+    margin-top: 8px;
+}
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+}
+img {
+    /* para mantener la mismas dimensiones de todas las imagenes */
+    aspect-ratio: 16/9;
+    /* te ajusta el largo y el ancho y te quita un poco para que encaje */
+    object-fit: cover;
+    width: 100%;
+}
+aside {
+    width: 15%;
+    background-color: rgb(54, 54, 54);
+    color: #e3e3e3;
+    padding: 20px;
+}
+footer {
+    background-color: black;
+    color: #e3e3e3;
+    padding: 10px;
+    text-align: center;
+}
+/*====================CLASES==============*/
+.ocultar {
+    /* visibility: hidden; */
+    display: none;
+}
+.texto-negrita {
+    font-weight: 700;
+}
+.texto-cursiva {
+    font-style: italic;
+}
+.dancing-script-700 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }

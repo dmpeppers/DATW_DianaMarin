@@ -1,0 +1,42 @@
+/* CSS para Flexbox-1 */
+.contenedor {
+        /* display: flex; te permite transformar un contenedor de lineas en columnas. Ej: esquema
+    sin display: flex    con display: flex
+    linea 1             linea 1 linea2 linea 3
+    linea 2
+    linea 3*/
+    display: flex;
+    padding: 5px;
+    border: 1px solid red;
+}
+#d-contenedor{
+        /* flex- direction  te permite cambiar de posicion las cajas tienes diferentes opciones row- se mantiene la estructura normal si solo se coloca flex
+    row-reverse  se cambia el orden de las cajas
+    column- se vuelve columnas todo como original sin el flex
+    column-reverse se cambia el orden de las cajas en la columna*/
+    flex-direction: row;
+}
+#w-contenedor{
+    flex-wrap: wrap-reverse;
+    /* flex-wrap permite que las cajas sean flexibles, donde se envuelven segun el tamaño del browsor se tiene la opcion de que se crean 2 lineas de cajas en vez de solo una */
+}
+#jc-contenedor{
+    justify-content: space-between;
+}
+#ac-contenedor{
+    align-content: stretch;
+    height: 200px;
+}
+.caja {
+    /* para colocar la lista de forma de caja con el width y height */
+    width: 80px;
+    /* height: 80px; */
+    /* text-align centra el texto en el eje x, line-height amplia la altura de las lineas */
+    text-align: center;
+    font-size: x-large;
+    line-height: 80px; 
+    /* para separar las cajas con el margin, para separarlo solamente de una de las otras se le añade -bottom */
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #eee;
+}

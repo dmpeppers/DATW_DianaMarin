@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extremeña de Telefonos</title>
+    <style>
+        body {
+            /* alinear el cuerpo para que este centrado */
+            margin-right: 200px;
+            margin-left: 200px;   
+        }
+        h1, caption {
+            /* Cambiar el estilo de letras para el titulo y el nombre de las tablas */
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table {
+            /* css de la estructura de la tabla */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            padding: 5px;
+            /* te permite ampliar el tamaño de las celdas entre si */
+            border-spacing: 5px;
+            border: 3px solid black;
+            /* background-color: rgba(244, 246, 244, 0.871); */
+            /* background-image: url("../img/green-background.png");
+            background-attachment: local;
+            background-repeat: no-repeat; */
+        }
+        th {
+            /* encabezado de extremeña de telefonos */
+            padding: 5px;            border-radius: 5px; 
+            text-align: center;
+            border: 1px solid rgb(4, 73, 4);
+            background-color: green;
+            color: rgb(255, 255, 255);
+        }
+        td {
+            /* estilo general de todas las celdas */
+            padding: 5px;
+            border-radius: 5px; 
+            border: 1px solid #515050;
+        }
+        .detalles {
+            /* estilo especial de la celda-fila para detalles */
+            padding: 8px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .seg-enc-tabla {
+            /* estilo especial para celdas-filas para detallar informacion de conceptos */
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            border: 1px solid rgb(4, 73, 4);
+            background-color: green;
+            color: rgb(255, 255, 255);
+        }
+        .centrado-texto {
+            text-align: center;
+        }
+        .derecha-texto {
+            text-align: right;
+        }
+        .small-texto {
+            font-size: small;
+        }
+        #contenedor {
+            /* width: 100%; */
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        /* tr:nth-child(4){
+            background-color: blue;
+        } */
+         header {
+            position: relative;
+            height: 12vh;
+         }
+        #logo {
+            position: absolute;
+            display: block;
+            width: 80px;
+            top: -10px;
+            right: -180px;
+            padding: 0px;
+            margin-right: 0px;
+        } 
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Extremeña de Teléfonos S.A</h1>
+            <img src="../img/logo-telefonia.png" alt="Logo Telefonia" id="logo">
+        </header>
+        <main>
+            <table>
+   
+                <caption>Factura detallada</caption><!-- Primera fila: el ancho total de la tabla que son 5 celdss con el CSS del encabezado principal de la tabla -->
+                <tr>
+                    <th class="enc-tabla" colspan="5">EXTREMEÑA DE TELEFONOS</th>
+                </tr>
+                <!-- Segunda fila: el ancho total de la tabla que son 5 celdas con el CSS del detalle de informacion  -->
+                <tr>
+                    <td class="detalles" colspan="5">Detalle de cuotas</td>
+                </tr>
+                <!-- Tercera fila: cuatro columnas con la ultima de valor de dos celdas, con el css del segundo encabezado de la tabla -->
+                <tr>
+                    <td class="seg-enc-tabla">PERIODO</td>
+                    <td class="seg-enc-tabla">CONCEPTO</td>
+                    <td class="seg-enc-tabla">IMPORTE</td>
+                    <td class="seg-enc-tabla" colspan="2">DESCUENTO</td>
+                </tr>
+                <!-- Cuarta fila: cuatro filas, con la primera casilla de largo(rowspan) de tres celdas y la ultima celda  de ancho de dos celdas, algunas celdas tienen aplicado la clase del texto centrado-->
+                <tr>
+                    <td class="centrado-texto" rowspan="3">01-05-13/01-07-13</td>
+                    <td>Servicio de identificación de llamadas</td>
+                    <td class="centrado-texto">12&euro;</td>
+                    <td class="centrado-texto" colspan="2">0</td>
+                </tr>
+                <!-- Quinta fila: cuatro filas, donde la primera casilla no esta activa en esta linea ya que el espacio esta ocupado por la fila de arriba, por eso iniciamos directamente en la segunda columna, la ultima celda con ancho de 2 celdas y algunas celdas con el texto centrado-->
+                <tr>
+                    <td>Linea individual</td>
+                    <td class="centrado-texto">14&euro;</td>
+                    <td class="centrado-texto" colspan="2"> 0</td>
+                </tr>
+                <!-- Sexta fila: cuatro filas, donde la primera casilla no esta activa en esta linea ya que el espacio esta ocupado por la fila de mas arriba, por eso iniciamos directamente en la segunda columna, la ultima celda con ancho de 2 celdas y algunas celdas con el texto centrado -->
+                <tr>
+                    <td>Bono ciudad</td>
+                    <td class="centrado-texto">10&euro;</td>
+                    <td class="centrado-texto" colspan="2">0</td>
+                </tr>
+                <!-- Septima fila: dos filas por lo cual la primera celda tiene un ancho de dos celdas, y la otra tiene el ancho de 3 celdas, esa ultima tiene aplicado la clase para tener el texto a la derecha -->
+                <tr>
+                    <td colspan="2">TOTAL:</td>
+                    <td class="derecha-texto" colspan="3">36&euro;</td>
+                </tr>
+                <!-- Octava fila: el ancho total de la tabla que son 5 celdas con el CSS del detalle de informacion -->
+                <tr>
+                    <td class="detalles" colspan="5">Detalle de consumos</td>
+                </tr>
+                <!-- Novena fila: cinco columnas, con el css del segundo encabezado de la tabla  -->
+                <tr>
+                    <td class="seg-enc-tabla">CONCEPTO</td>
+                    <td class="seg-enc-tabla">LLAMADAS</td>
+                    <td class="seg-enc-tabla">DURACIÓN</td>
+                    <td class="seg-enc-tabla">IMPORTE</td>
+                    <td class="seg-enc-tabla">DESCUENTO</td>
+                </tr>
+                <!-- Decima fila: cinco celdas con algunas aplicadas del texto centrado -->
+                <tr>
+                    <td>Llamada internacional</td>
+                    <td class="centrado-texto">23</td>
+                    <td class="centrado-texto">10m 23s</td>
+                    <td class="centrado-texto">13&euro;</td>
+                    <td class="centrado-texto">0</td>
+                </tr>
+                <!-- Onceava fila: cinco celdas con algunas aplicadas del texto centrado -->
+                <tr>
+                    <td>Llamada metropolitana</td>
+                    <td class="centrado-texto">23</td>
+                    <td class="centrado-texto">10m 23s</td>
+                    <td class="centrado-texto">3.5&euro;</td>
+                    <td class="centrado-texto">0</td>
+                </tr>
+                <!-- Undecima fila: dos columnas, una celda total de ancho de 2 celdas y otra con el tamaño de 3 celda y la clase del texto a la derecha -->
+                <tr>
+                    <td colspan="2">TOTAL</td>
+                    <td class="derecha-texto" colspan="3">16.5&euro;</td>
+                </tr>
+                <!-- Doceaba fila: fila de tamaño 5 celdas de ancho con la clase para texto pequeño e italico -->
+                <tr>
+                    <td class="detalles small-texto" colspan="5">Extremeña de teléfonos le informa que puede llamar al número gratuito 666 para cualquier duda o sugerencia que tenga acerca de esta factura o de nuestros servicios</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

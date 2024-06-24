@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        body {
+            background-color: rgb(35, 35, 35);
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: beige;
+        }
+        section {
+            width: calc(97%/3);
+            padding: 10px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            border-radius: 25px;
+            margin-right: .5%;
+            margin-left: .5%;
+        }
+        section:nth-of-type(1) {
+            background-color: red;
+        }
+        section:nth-of-type(2) {
+            background-color: yellow;
+        }
+        section:nth-of-type(3) {
+            background-color: green;
+        }
+        section img {
+            width: 100%;
+            background-color: beige;
+        }
+        figure {
+            margin: 0;
+        }
+        #contenido  {
+            display: flex;
+            background-color: aqua;
+        }
+        aside {
+            width: 100%;
+            background-color: blueviolet;
+            color: white;
+        }
+        main {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-wrap</h1>
+    <div id="contenido">
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ratione vitae hic veritatis saepe consectetur esse aspernatur quos obcaecati a et culpa, perspiciatis autem sed excepturi cumque eius! Quibusdam, possimus?</p>
+    
+            <section>
+                <h2>Titulo 2</h2>
+                <figure>
+                    <img src="img/Espanya/Berlanga_de_duero_Soria_spain.jpg" alt="Espanya">
+                </figure>
+            </section>
+            <section>
+                <h2>Titulo 2</h2>
+                <figure>
+                    <img src="img/Alemania/Aerial_view_of_the_island_of_Mainau_on_Lake_Constance_alemania.jpg" alt="Alemania">
+                </figure>
+            </section>
+            <section>
+                <h2>Titulo 2</h2>
+                <figure>
+                    <img src="img/Australia/Cueva_de_luciernagas_Blue_National_Park_Australia.jpg" alt="Australia">
+                </figure>
+            </section>
+        </main>
+        <aside>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto aperiam assumenda ad dolorum ea nam nobis quae consectetur repellat similique! Voluptas velit debitis rerum excepturi ducimus illum assumenda ipsum at.</p>
+            <p>Recusandae voluptatum suscipit commodi aperiam, deserunt vitae fugiat optio officiis ut ex minima! Aspernatur repellendus ullam quasi necessitatibus quod quia? Cumque, dolorum debitis quos ut perspiciatis eaque recusandae iste totam!</p>
+            <p>Natus nam culpa ex maiores ipsum voluptas repudiandae beatae nostrum, quasi est. Necessitatibus, molestias nemo? Voluptas voluptatem aperiam rerum recusandae voluptates quis facilis aliquid, dolore at, eveniet cum porro nesciunt.</p>
+        </aside>
+    </div>
+</body>
+</html>

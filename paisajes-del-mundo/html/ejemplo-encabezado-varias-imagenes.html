@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado varias Imagenes</title>
+    <style>
+        body, h1 {
+            padding: 0;
+            margin: 0;
+        }
+        #enc {
+            height: 100vh;
+            background-color: bisque;
+            background-image: url("../img/Canada/lobos_articos_islas_reina_isabel_canada.jpg"), url("../img/Canada/carabos_lapones_midiendo_sus_fuerzas_montreal_canada.jpg"), url("../img/Canada/osos_polares_parque_nacional_de_Torngat_Mountains_Quebec_canada.jpg");
+            background-size: 50%, 50%;
+            background-position-x: right, center, left ;
+            background-position-y: bottom, center, top;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header id="enc">
+            <h1>Paisajes</h1>
+        </header>
+    </div>
+</body>
+</html>

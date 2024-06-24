@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After before</title>
+    <style>
+        cite{
+            display: block;
+        }
+        #caja {
+            background-color: aquamarine;
+        }
+        p{
+            text-align: right;
+        }
+        #caja::before{
+            content: "Esto se pone en la parte de arriba de la caja";
+            float: left;
+            display: block;
+            background-color: rebeccapurple;
+        }
+        #caja::after{
+            content: "Esto otro se coloca en la parte de abajo de la caja";
+        }
+    </style>
+</head>
+<body>
+    <div id="caja">
+        <p>En un lugar de la Mancha...</p>
+        <cite>Miguel de Cervantes</cite>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        dt{
+            font-weight: bold;
+        }
+        dd {
+            font-style: italic;
+        }
+        ol {
+            background: rgb(255, 255, 0);
+        }
+        li:nth-child(3), li:nth-child(1){
+            /* primer elemento: first-child, ultimo elemento: last-child, pares: nth-child(even), impares: nth-chil(odd) */
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <!-- ol>(li{Elemento $})*5 -->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <!-- si se olvida poner elementos (li{Elemento $@6})*5 -->
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li> 
+        <li>Elemento 9</li>
+        <li>Elemento 10</li>
+    </ol>
+    <h2>Listas sin Ordenas</h2>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+    <h2>Listas Varios Niveles</h2>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2
+            <ul>
+                <li>Elemento 2.1</li>
+                <li>Elemento 2.2</li>
+            </ul>
+        </li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <h2>Lista de Definición</h2>
+    <dl>
+        <dt>Termino</dt>
+        <dd>Descripción</dd>
+        <dt>Mercurio</dt>
+        <dd> Primer planeta del Sistema solar.</dd>
+        <dt>Venus</dt>
+        <dd>Segundo planeta del Sistema solar.</dd>
+        <dt>La Tierra</dt>
+        <dd>Tercer planeta del Sistema solar.</dd>
+        <dt>Marte</dt>
+        <dd>Cuarto planeta del Sistema solar.</dd>
+        <dt>Jupiter</dt>
+        <dd>Quinto planeta del Sistema solar.</dd>
+        <dt>Saturno</dt>
+        <dd>Sexto planeta del Sistema solar.</dd>
+        <dt>Urano</dt>
+        <dd>Séptimo planeta del Sistema solar.</dd>
+        <dt>Neptuno</dt>
+        <dd>Octavo planeta del Sistema solar.</dd>
+        <dt>Pluton</dt>
+        <dd>Noveno planeta del Sistema solar.</dd>
+    </dl>
+</body>
+</html>

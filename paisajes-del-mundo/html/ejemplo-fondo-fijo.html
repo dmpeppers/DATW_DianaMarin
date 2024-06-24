@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo fijo</title>
+    <style>
+        body {
+            /* margin-right: 130px;
+            margin-left: 130px; */
+            background-color: rgba(150, 150, 150, 0.364);
+            background-image: url("../img/fondos-lazo/lazo.png");
+            background-repeat: repeat-y;
+            background-attachment: local;
+        }
+        #contenedor {
+            width: 80%;
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+        /* establecer la posicion relativa del bloque del header para poder poner imagenes de forma absoluta y pueda cambiar los lugares de forma flotante */
+        header{
+            position: relative;
+            height: 20vh;
+            background: rgba(0, 0, 255, 0.326);
+        }
+        /* posicion de logo mentiona dentro del header segun la posicion relativa del bloque, donde se puede mover dentro de la caja del header */
+        #logo{
+            position: absolute;
+            display: block;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.429);
+            bottom: 10px;
+            left: -40px;
+        }
+        /* posicion de lazo dentro del header segun la prosicion relativa del bloque, se puede mover por fuera de la caja del header con posiciones negativas como top y right, tambien podemos rotar la imagen en deg (degree) */
+        #lazo {
+            position: absolute;
+            display: block;
+            top: -30px;
+            right: -58px;
+            rotate: 30deg;
+        }
+        /* ubica la barra de navegacion de forma permanente en la posicion requerida con la opcion sticky */
+        /* z-index se utiliza para poner un orden de apilamiento, se parte de un numero muy elevado para poder super poner cualquier elemento */
+        #navegacion {
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+            background-color: rgba(0, 0, 0, 0.486);
+            color: white;
+            padding: 8px;
+        }
+        /* disparando directamente a las imagenes de la seccion, si quieres cambiar la informacion solamente de un elemento imagen usamos la opcion de id="" e inicializamos el nombre del elemento como la opcion de lazo y logo*/
+        section>img {
+            width: 100%;
+            filter: sepia(200%) blur(1px);
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Titulo principal</h1>
+            <img src="../img/logo-mentiona.png" alt="Logo Mentiona" id="logo">
+            <img src="../img/fondos-lazo/lazo.png" alt="Logo lazo" id="lazo">
+        </header>
+        <nav id="navegacion">
+            <a href="#">Elemento 1</a>
+            <a href="#">Elemento 2</a>
+            <a href="#">Elemento 3</a>
+            <a href="#">Elemento 4</a>
+            <a href="#">Elemento 5</a>
+        </nav>
+        <main>
+            <section id="seccion-1">
+                <h2>Titulo nivel 2</h2>
+                <img src="../img/Escocia/castillo_de_urquhart_frente_al_lago_ness_escocia.jpg" alt="Castillo urquhart escocia" id="imagentitulo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio magni sit quaerat temporibus ex saepe eligendi atque iure dicta. Maiores laborum labore a ipsam, ab ducimus neque iste pariatur?</p>
+                <p>Dolorem repellat, doloremque voluptate aliquam laboriosam ratione quo dicta quia rerum quibusdam officia facere et sit necessitatibus magni, eos libero nam incidunt quaerat eius non labore hic. At, nobis veniam!</p>
+                <p>Eum, excepturi saepe! Facere odio rerum quas molestias id magni soluta. Numquam nobis accusantium dolor reiciendis error doloribus qui facilis iste tempora, dignissimos magni nihil minus odit voluptatibus ex molestiae.</p>
+                <p>Est labore aspernatur iure commodi neque illo voluptatibus et mollitia tempora sequi ipsam, sint deleniti. Ipsum vel dignissimos ex odit, eius explicabo ut itaque, harum ducimus at odio, laborum impedit!</p>
+                <p>Facilis recusandae, omnis quae ad est sapiente ab dolorum similique animi, accusamus atque. Sequi porro quasi quibusdam quam repellendus deserunt ex? Architecto quod consequuntur possimus sit unde. Odit, maxime accusantium!</p>
+                <p>Ad, commodi asperiores corrupti labore, quasi aliquid vel odit sequi, alias mollitia doloribus. Incidunt, suscipit. Error voluptatum tenetur accusamus iste vitae necessitatibus culpa, cupiditate ipsum ullam assumenda, impedit blanditiis fuga.</p>
+                <p>Alias praesentium aut obcaecati quasi blanditiis molestias est temporibus quibusdam optio fuga quas eaque aspernatur quam perferendis ad natus dolores delectus magni numquam itaque, expedita amet accusamus adipisci. In, saepe.</p>
+                <p>Consectetur porro repellendus eaque necessitatibus aspernatur nobis distinctio harum voluptates facilis, deserunt rerum sequi perferendis, dignissimos quisquam cupiditate ea, ex totam quidem inventore autem dolore fugit fugiat et! Repellat, cum.</p>
+                <p>Consectetur qui sint sunt molestiae omnis voluptas cumque magnam aut ipsa, ea sapiente? Ea delectus, voluptates rerum odit commodi nulla reprehenderit optio officiis ut nobis quisquam possimus magni, nesciunt omnis.</p>
+                <p>Dolorum ipsa explicabo debitis in, eius aut enim commodi ratione esse repellendus voluptatibus aperiam excepturi neque, earum ea. Quasi itaque nam voluptate amet sunt dolores expedita soluta suscipit. Non, labore?</p>
+                <p>Mollitia, quibusdam debitis similique nostrum voluptate aut, ratione ut ipsam odit nulla reprehenderit neque qui delectus tempore tempora earum, eius quisquam ducimus sunt. Repellendus ducimus odio consectetur eos, placeat architecto.</p>
+                <p>Ad voluptates debitis amet cum exercitationem. Earum fugiat officiis deserunt iusto provident corporis officia nulla, accusamus in ipsum enim quae ea perspiciatis repellat sunt ducimus soluta neque? Sapiente, laboriosam illo?</p>
+                <p>Aliquid, quae debitis? Saepe illum ducimus quas voluptatum velit! Consequuntur, enim velit eius fugit numquam sequi asperiores excepturi? Perferendis maxime reiciendis praesentium eaque ullam quibusdam rem temporibus, corporis esse eligendi?</p>
+                <p>Nihil sint rem nisi voluptate architecto ducimus dolorum sunt possimus exercitationem temporibus repellat maiores quam voluptates, ipsam quisquam harum quidem aut. Enim quas eius modi cupiditate, architecto aspernatur autem voluptas!</p>
+                <p>Praesentium, non provident aspernatur quasi facere porro alias, facilis, nemo natus nobis iste magni laborum ducimus. Similique veritatis sunt iste expedita dolorum placeat, qui blanditiis ipsum provident itaque, maiores eaque.</p>
+            </section>
+        </main>
+        <aside id="info">
+            <blockquote>Informacion commplementaria</blockquote>
+        </aside>
+        <footer id="pie">
+            <address>&copy; mentiona</address>
+        </footer>
+    </div>
+</body>
+</html>
