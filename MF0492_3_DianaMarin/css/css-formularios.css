@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+.playwrite-it-moderna{
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+h2{
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 2em;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 75px;
+    margin-right: 75px;
+    font-weight: bold;
+}
+form{
+    width: 500px;
+    font-weight: 700;
+}
+.ancho{
+    width: 300px;
+}
+.encendido {
+    font-size: 1em;
+    background-color: rgb(35, 111, 243);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 4px solid rgb(23, 88, 199);
+}
+.apagado{
+    font-size: 1em;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: solid rgb(203, 134, 6);
+}
